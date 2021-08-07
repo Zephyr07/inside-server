@@ -1,0 +1,37 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreatePromotionsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('promotions', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('priorite');
+            $table->dateTime('date_debut');
+            $table->dateTime('date_fin');
+            $table->integer('offres_id')->unsigned()->index()->nullable();
+            $table->foreign('offres_id')->references('id')->on('offres')->onDelete('set null');
+            $table->string('statut')->default('new');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('promotions');
+    }
+}
