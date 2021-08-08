@@ -26,7 +26,7 @@ class Localisations extends Model
     }
 
     public function  villes(){
-        return $this->hasMany(Villes::class);
+        return $this->belongsTo(Villes::class);
     }
 
     public function  entreprises(){

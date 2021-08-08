@@ -9,7 +9,7 @@ $factory->define(Notes::class, function (Faker $faker) {
     return [
         //
         'commentaire'=>$faker->text(100),
-        'valeur'=>$faker->numberBetween(5,100),
+        'valeur'=>$faker->numberBetween(1,5),
         'statut'=>\Illuminate\Support\Arr::random(Notes::$Status)
     ];
 });

@@ -11,7 +11,7 @@ class TypeEntreprisesTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\TypeEntreprises::class,20)->create();
+        factory(\App\TypeEntreprises::class,5)->create();
 //        factory(\App\Category::class,20)->create();
         /*$path =base_path("database/seeds/json/categories.json");
         $items = json_decode(file_get_contents($path),true);

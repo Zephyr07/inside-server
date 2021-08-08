@@ -41,7 +41,7 @@ class Categories extends Model
         return env('APP_URL').$val;
     }
 
-    public function  sous_catgories(){
+    public function  sous_categories(){
         return $this->hasMany(SousCategories::class);
     }
 

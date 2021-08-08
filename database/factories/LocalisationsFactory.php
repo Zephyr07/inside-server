@@ -12,7 +12,7 @@ $factory->define(Localisations::class, function (Faker $faker) {
         'information_supplementaire'=>$faker->text(50),
         'longitude'=>$faker->numberBetween(0,10),
         'latitude'=>$faker->numberBetween(0,10),
-        'entreprise_id'=> \App\Helpers\FactoryHelper::getOrCreate(\App\Entreprises::class)->id,
-        'ville_id'=> \App\Helpers\FactoryHelper::getOrCreate(\App\Villes::class)->id,
+        'entreprises_id'=> \App\Helpers\FactoryHelper::getOrCreate(\App\Entreprises::class)->id,
+        'villes_id'=> \App\Helpers\FactoryHelper::getOrCreate(\App\Villes::class)->id,
     ];
 });

@@ -26,6 +26,7 @@ class CategoriesRequest extends FormRequest
         $rules = [
             'nom'=>'required|max:255',
             'description'=>'max:255',
+            'image'=>'max:255',
             'statut'=>Rule::in(Categories::$Status),
         ];
         return RuleHelper::get_rules($this->method(),$rules);

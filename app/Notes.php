@@ -27,12 +27,12 @@ class Notes extends Model
         return $this->commentaire ;
     }
 
-    public function entreprises(){
-        return $this->hasMany(Entreprises::class);
+    public function note_entreprises(){
+        return $this->hasMany(NoteEntreprises::class);
     }
 
-    public function offres(){
-        return $this->hasMany(Offres::class);
+    public function note_offres(){
+        return $this->hasMany(NoteOffres::class);
     }
 
 }

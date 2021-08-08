@@ -49,11 +49,11 @@ class Offres extends Model
         return $this->hasMany(Promotions::class);
     }
 
-    public function  prix(){
-        return $this->hasMany(Prix::class);
+    public function  prix_offres(){
+        return $this->hasMany(PrixOffres::class);
     }
 
-    public function  notes(){
-        return $this->hasMany(Notes::class);
+    public function  note_offres(){
+        return $this->hasMany(NoteOffres::class);
     }
 }

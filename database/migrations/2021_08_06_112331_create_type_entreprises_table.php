@@ -15,8 +15,9 @@ class CreateTypeEntreprisesTable extends Migration
     {
         Schema::create('type_entreprises', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nom');
-            $table->text('description');
+            $table->string('nom')->unique();
+            $table->string('image')->nullable();
+            $table->text('description')->nullable();
             $table->string('statut')->default('new');
             $table->timestamps();
         });

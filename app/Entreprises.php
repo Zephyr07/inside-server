@@ -33,6 +33,14 @@ class Entreprises extends Model
         return $this->nom ;
     }
 
+    public function getImageAttribute($val)
+    {
+        if($val==null){
+            $val='default/img/category_logo.jpg';
+        }
+        return env('APP_URL').$val;
+    }
+
     public function getLogoAttribute($val)
     {
         if($val==null){
@@ -45,16 +53,16 @@ class Entreprises extends Model
         return $this->belongsTo(TypeEntreprises::class);
     }
 
-    public function  localisation(){
-        return $this->hasMany(Localisation::class);
+    public function  localisations(){
+        return $this->hasMany(Localisations::class);
     }
 
-    public function  note(){
-        return $this->hasMany(Note::class);
+    public function  note_entreprises(){
+        return $this->hasMany(NoteEntreprises::class);
     }
 
     public function  prix(){
-        return $this->hasMany(Prix::class);
+        return $this->hasMany(PrixOffres::class);
     }
 
 

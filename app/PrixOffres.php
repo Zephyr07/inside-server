@@ -31,7 +31,7 @@ class PrixOffres extends Model
     }
 
     public function entreprises(){
-        return $this->hasMany(Entreprises::class);
+        return $this->belongsTo(Entreprises::class);
     }
 
     public function souhaits(){

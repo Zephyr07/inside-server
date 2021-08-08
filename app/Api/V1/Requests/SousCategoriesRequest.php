@@ -26,6 +26,7 @@ class SousCategoriesRequest extends FormRequest
     public function rules(){
         $rules = [
             'nom'=>'required|max:255',
+            'image'=>'max:255',
             'description'=>'max:255',
             'categories_id'=>'required|integer|exists:categories,id',
             'statut'=>Rule::in(SousCategories::$Status),

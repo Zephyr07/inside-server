@@ -16,15 +16,29 @@ class TypeEntreprises extends Model
     //
     use RestTrait;
 
-    protected $fillable = ['nom','description','statut'];
+    protected $fillable = ['nom','description','image','statut'];
 
     protected $dates = ['created_at','updated_at'];
 
     public static $Status= ['active','disable'];
 
+    public function  __construct(array $attributes = [])
+    {
+        $this->files = ['image'];
+        parent::__construct($attributes);
+    }
+
     public function getLabel()
     {
         return $this->nom ;
+    }
+
+    public function getImageAttribute($val)
+    {
+        if($val==null){
+            $val='default/img/category_logo.jpg';
+        }
+        return env('APP_URL').$val;
     }
 
 

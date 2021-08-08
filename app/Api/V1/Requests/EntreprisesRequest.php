@@ -30,7 +30,7 @@ class EntreprisesRequest extends FormRequest
             'nom'=>'required|max:255',
             'a_propos'=>'required|max:255',
             'telephone'=>'required|numeric|max:255',
-            'logo'=>'required|image',
+            'logo'=>'image',
             'type_entreprises_id'=>'required|integer|exists:type_entreprises,id',
             'statut'=>Rule::in(Entreprises::$Status),
         ];
