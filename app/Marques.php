@@ -11,12 +11,12 @@ namespace App;
 use App\Traits\RestTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Offres extends Model
+class Marques extends Model
 {
     //
     use RestTrait;
 
-    protected $fillable = ['nom','type','image','description','sous_categories_id','statut'];
+    protected $fillable = ['nom','image','statut'];
 
     protected $dates = ['created_at','updated_at'];
 
@@ -41,19 +41,8 @@ class Offres extends Model
         return env('APP_URL').$val;
     }
 
-    public function sous_categories(){
-        return $this->belongsTo(SousCategories::class);
+    public function  offres(){
+        return $this->hasMany(Offres::class);
     }
 
-    public function  prix_offres(){
-        return $this->hasMany(PrixOffres::class);
-    }
-
-    public function  note_offres(){
-        return $this->hasMany(NoteOffres::class);
-    }
-
-    public function  marques(){
-        return $this->belongsTo(Marques::class);
-    }
 }

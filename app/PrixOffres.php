@@ -16,7 +16,7 @@ class PrixOffres extends Model
     //
     use RestTrait;
 
-    protected $fillable = ['valeur','entreprises_id','offres_id'];
+    protected $fillable = ['valeur','prix_promo','entreprises_id','offres_id'];
 
     protected $dates = ['created_at','updated_at'];
 
@@ -27,7 +27,7 @@ class PrixOffres extends Model
     }
 
     public function offres(){
-        return $this->hasMany(Offres::class);
+        return $this->belongsTo(Offres::class);
     }
 
     public function entreprises(){

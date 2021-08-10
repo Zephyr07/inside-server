@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class SousCategoriesTableSeeder extends Seeder
+class MarquesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,7 @@ class SousCategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\SousCategories::class,10)->create();
+        factory(\App\Marques::class,20)->create();
 //        factory(\App\Category::class,20)->create();
         /*$path =base_path("database/seeds/json/categories.json");
         $items = json_decode(file_get_contents($path),true);

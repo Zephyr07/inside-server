@@ -52,6 +52,7 @@ $api->version('v1', function (Router $api) {
             ]);
         });
         $api->resource("categories", 'CategoriesController');
+        $api->resource("marques", 'MarquesController');
         $api->resource("entreprises", 'EntreprisesController');
         $api->resource("localisation", 'LocalisationController');
         $api->resource("notes", 'NotesController');

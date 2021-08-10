@@ -2,17 +2,12 @@
 
 namespace App\Api\V1\Requests;
 
-use App\Abonnements;
 use App\Category;
-use App\Entreprises;
 use App\Helpers\RuleHelper;
-use App\Offres;
-use App\Paiements;
 use Dingo\Api\Http\FormRequest;
-use GuzzleHttp\Client;
 use Illuminate\Validation\Rule;
 
-class PrixRequest extends FormRequest
+class MarquesRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -29,10 +24,9 @@ class PrixRequest extends FormRequest
      */
     public function rules(){
         $rules = [
-            'valeur'=>'numeric|required|max:255',
-            'prix_promo'=>'numeric|max:255',
-            'offres_id'=>'required|integer|exists:offres,id',
-            'entreprises_id'=>'required|integer|exists:entreprises,id'
+            'nom'=>'required|max:255',
+            'image'=>'max:255',
+            'statut'=>Rule::in(Marques::$Status),
         ];
         return RuleHelper::get_rules($this->method(),$rules);
     }

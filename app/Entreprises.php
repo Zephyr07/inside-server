@@ -61,9 +61,12 @@ class Entreprises extends Model
         return $this->hasMany(NoteEntreprises::class);
     }
 
-    public function  prix(){
+    public function  prix_offres(){
         return $this->hasMany(PrixOffres::class);
     }
 
+    public function  promotions(){
+        return $this->hasMany(Promotions::class);
+    }
 
 }

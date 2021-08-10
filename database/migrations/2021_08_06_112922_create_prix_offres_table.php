@@ -16,6 +16,7 @@ class CreatePrixOffresTable extends Migration
         Schema::create('prix_offres', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('valeur');
+            $table->integer('prix_promo')->nullable();
             $table->integer('offres_id')->unsigned()->index()->nullable();
             $table->foreign('offres_id')->references('id')->on('offres')->onDelete('set null');
             $table->integer('entreprises_id')->unsigned()->index()->nullable();
