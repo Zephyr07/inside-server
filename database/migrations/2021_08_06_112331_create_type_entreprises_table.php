@@ -18,7 +18,7 @@ class CreateTypeEntreprisesTable extends Migration
             $table->string('nom')->unique();
             $table->string('image')->nullable();
             $table->text('description')->nullable();
-            $table->string('statut')->default('new');
+            $table->string('statut')->default('active');
             $table->timestamps();
         });
     }

@@ -29,6 +29,7 @@ class NotesRequest extends FormRequest
         $rules = [
             'commentaire'=>'required|max:255',
             'valeur'=>'required|integer|max:255',
+            'user_id'=>'required|integer|exists:users,id',
             'statut'=>Rule::in(Notes::$Status),
         ];
         return RuleHelper::get_rules($this->method(),$rules);

@@ -17,7 +17,9 @@ class CreateNotesTable extends Migration
             $table->increments('id');
             $table->text('commentaire');
             $table->integer('valeur');
-            $table->string('statut')->default('new');
+            $table->integer('user_id')->unsigned()->index()->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
+            $table->string('statut')->default('active');
             $table->timestamps();
         });
     }

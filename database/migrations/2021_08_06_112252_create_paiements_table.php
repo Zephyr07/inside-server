@@ -16,10 +16,9 @@ class CreatePaiementsTable extends Migration
         Schema::create('paiements', function (Blueprint $table) {
             $table->increments('id');
             $table->double('montant');
-            $table->dateTime('date');
             $table->string('mode_paiement');
             $table->string('code_transaction')->unique();
-            $table->string('statut')->default('new');
+            $table->string('statut')->default('active');
             $table->timestamps();
         });
     }

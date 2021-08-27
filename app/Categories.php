@@ -16,7 +16,7 @@ class Categories extends Model
     //
     use RestTrait;
 
-    protected $fillable = ['nom','image','description','statut'];
+    protected $fillable = ['nom','image','description','parent_id','statut'];
 
     protected $dates = ['created_at','updated_at'];
 

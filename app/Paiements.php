@@ -16,11 +16,11 @@ class Paiements extends Model
     //
     use RestTrait;
 
-    protected $fillable = ['montant','date','mode_paiement','code_transaction','statut'];
+    protected $fillable = ['montant','mode_paiement','code_transaction','statut'];
 
     protected $dates = ['created_at','updated_at'];
 
-    public static $Status= ['accepted','declined'];
+    public static $Status= ['accepted','declinde', 'pending'];
 
     public function getLabel()
     {

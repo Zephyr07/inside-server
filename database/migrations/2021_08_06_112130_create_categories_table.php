@@ -17,8 +17,10 @@ class CreateCategoriesTable extends Migration
             $table->increments('id');
             $table->string('nom');
             $table->text('description');
-            $table->string('statut')->default('new');
+            $table->string('statut')->default('active');
             $table->string('image')->nullable(true);
+            $table->integer('parent_id')->unsigned()->index()->nullable();
+            $table->foreign('parent_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }

@@ -7,6 +7,7 @@ $api = app(Router::class);
 
 $api->version('v1', function (Router $api) {
     $api->group(['namespace' => 'App\Api\V1\Controllers'],function (Router $api){;
+
         $api->group(['prefix' => 'auth'], function(Router $api) {
             $api->post('signup', 'Auth\AuthController@signup');
             $api->post('signin', 'Auth\AuthController@signin');
@@ -16,11 +17,11 @@ $api->version('v1', function (Router $api) {
             $api->post('reset', 'Auth\PasswordResetController@reset');
             $api->post('activateEmail', 'Auth\AccountVerificationController@activateEmail');
             $api->post('activatePhone', 'Auth\AccountVerificationController@activatePhone');
-
             $api->group(['middleware' => 'jwt.auth'], function(Router $api) {
                 $api->get('me', 'Auth\AuthController@getAuthenticatedUser');
                 $api->post('update_info', 'Auth\AuthController@updateMe');
                 $api->post('logout', 'LogoutController@logout');
+                $api->get('check/{id}','PaiementsController@check');
                 $api->post('refresh', 'RefreshController@refresh');
             });
         });
@@ -36,9 +37,7 @@ $api->version('v1', function (Router $api) {
                 $api->get('me', 'UserController@me');
                 $api->post('updateMe', 'Auth\AuthController@updateMe');
                 $api->resource("parametres", 'ParametresController');
-                $api->resource("paiements", 'PaiementsController');
-                $api->resource("clients", 'ClientsController');
-                $api->resource("abonnements", 'AbonnementsController');
+
             });
 
 
@@ -51,6 +50,9 @@ $api->version('v1', function (Router $api) {
                 }
             ]);
         });
+
+        $api->resource("clients", 'ClientsController');
+        $api->post('buy','PaiementsController@buy');
         $api->resource("categories", 'CategoriesController');
         $api->resource("marques", 'MarquesController');
         $api->resource("entreprises", 'EntreprisesController');
@@ -62,10 +64,11 @@ $api->version('v1', function (Router $api) {
         $api->resource("prix", 'PrixController');
         $api->resource("promotions", 'PromotionsController');
         $api->resource("souhaits", 'SouhaitsController');
-        $api->resource("sous_categories", 'SousCategoriesController');
         $api->resource("type_entreprises", 'TypeEntreprisesController');
         $api->resource("type_abonnements", 'TypeAbonnementsController');
         $api->resource("villes", 'VillesController');
+        $api->resource("paiements", 'PaiementsController');
+        $api->resource("abonnements", 'AbonnementsController');
 
         $api->get('hello', function() {
             return response()->json([

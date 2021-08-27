@@ -10,6 +10,6 @@ $factory->define(Parametres::class, function (Faker $faker) {
         //
         'langue'=>$faker->text(20),
         'notification'=>$faker->boolean(),
-        'utilisateurS_id'=> \App\Helpers\FactoryHelper::getOrCreate(\App\User::class)->id,
+        'user_id'=> \App\Helpers\FactoryHelper::getOrCreate(\App\User::class)->id,
     ];
 });

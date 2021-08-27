@@ -30,7 +30,6 @@ class PaiementsRequest extends FormRequest
     public function rules(){
         $rules = [
             'montant'=>'numeric|required|max:255',
-            'date'=>'date|required|max:255',
             'mode_paiement'=>'required|max:255',
             'code_transaction'=>'required|max:255',
             'statut'=>Rule::in(Paiements::$Status),

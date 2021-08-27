@@ -16,7 +16,7 @@ class Parametres extends Model
     //
     use RestTrait;
 
-    protected $fillable = ['langue','notification','utilisateurs_id'];
+    protected $fillable = ['langue','notification','user_id'];
 
     protected $dates = ['created_at','updated_at'];
 

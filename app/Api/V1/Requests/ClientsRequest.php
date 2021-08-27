@@ -27,10 +27,10 @@ class ClientsRequest extends FormRequest
     public function rules(){
         $rules = [
             'nom'=>'required|max:255',
-            'telephone'=>'required|numeric|max:255',
+            'telephone'=>'required|numeric',
             'genre'=>'required|max:10',
             'image'=>'required|image',
-            'utilisateurs_id'=>'required|integer|exists:users,id',
+            'user_id'=>'required|integer|exists:users,id',
             'villes_id'=>'required|integer|exists:villes,id',
             'statut'=>Rule::in(Clients::$Status),
         ];

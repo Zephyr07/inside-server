@@ -12,7 +12,7 @@ $factory->define(Clients::class, function (Faker $faker) {
         'genre'=>$faker->text(5),
         //'image'=> FactoryHelper::fakeFile($faker,'categories/picture'),
         'telephone'=>$faker->numberBetween(200000000,999999999),
-        'utilisateurs_id'=> \App\Helpers\FactoryHelper::getOrCreate(\App\User::class)->id,
+        'user_id'=> \App\Helpers\FactoryHelper::getOrCreate(\App\User::class)->id,
         'statut'=>\Illuminate\Support\Arr::random(Clients::$Status),
     ];
 });

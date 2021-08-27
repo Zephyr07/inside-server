@@ -77,7 +77,7 @@ class User extends Authenticatable implements JWTSubject
     }
 
     public function clients(){
-        return $this->hasOne(Client::class);
+        return $this->hasOne(Clients::class);
     }
 
     public function routeNotificationForOneSignal()

@@ -31,7 +31,7 @@ class ParametresRequest extends FormRequest
         $rules = [
             'langue'=>'required|max:255',
             'notification'=>'max:255',
-            'utilisateurs_id'=>'required|integer|exists:users,id'
+            'user_id'=>'required|integer|exists:users,id'
         ];
         return RuleHelper::get_rules($this->method(),$rules);
     }

@@ -5,12 +5,7 @@ namespace App\Api\V1\Controllers;
 use App\Api\V1\Requests\PaiementsRequest;
 use App\Paiements;
 use App\Helpers\RestHelper;
-use Symfony\Component\HttpKernel\Exception\HttpException;
-use Tymon\JWTAuth\JWTAuth;
 use App\Http\Controllers\Controller;
-use App\Api\V1\Requests\LoginRequest;
-use Tymon\JWTAuth\Exceptions\JWTException;
-use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Auth;
 
 class PaiementsController extends Controller
@@ -22,6 +17,7 @@ class PaiementsController extends Controller
     public function index(){
         return RestHelper::get(Paiements::class);
     }
+
     /**
      * Show the form for creating a new paiements.
      *

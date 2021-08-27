@@ -21,9 +21,9 @@ class CreateOffresTable extends Migration
             $table->text('description');
             $table->integer('marques_id')->unsigned()->index()->nullable();
             $table->foreign('marques_id')->references('id')->on('marques')->onDelete('set null');
-            $table->integer('sous_categories_id')->unsigned()->index()->nullable();
-            $table->foreign('sous_categories_id')->references('id')->on('sous_categories')->onDelete('set null');
-            $table->string('statut')->default('new');
+            $table->integer('categories_id')->unsigned()->index()->nullable();
+            $table->foreign('categories_id')->references('id')->on('categories')->onDelete('set null');
+            $table->string('statut')->default('active');
             $table->timestamps();
         });
     }

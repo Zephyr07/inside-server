@@ -16,7 +16,7 @@ class CreateVillesTable extends Migration
         Schema::create('villes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nom')->unique();
-            $table->string('statut')->default('new');
+            $table->string('statut')->default('active');
             $table->timestamps();
         });
     }

@@ -23,7 +23,7 @@ class CreatePromotionsTable extends Migration
             $table->dateTime('date_fin');
             $table->integer('entreprises_id')->unsigned()->index()->nullable();
             $table->foreign('entreprises_id')->references('id')->on('entreprises')->onDelete('set null');
-            $table->string('statut')->default('new');
+            $table->string('statut')->default('active');
             $table->timestamps();
         });
     }

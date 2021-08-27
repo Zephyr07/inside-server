@@ -2,11 +2,9 @@
 
 namespace App\Api\V1\Controllers\Auth;
 
-use App\Device;
 use App\Http\Controllers\Controller;
-use App\Role;
+use App\Clients;
 use App\User;
-use App\Verification;
 use Auth;
 use Browser;
 use Carbon\Carbon;
@@ -18,7 +16,7 @@ use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use JWTAuth;
-use Mail;
+use Illuminate\Support\Facades\Mail;
 use Setting;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
@@ -64,7 +62,7 @@ class AuthController extends Controller
         $credentials = $request->only('email', 'password');
         $email=isset($credentials["email"])?$credentials["email"]:null;
         if($email==null)
-            return response()->json(['error' => 'missing login'], 403);
+            return Response::json(['error' => 'missing login'], 403);
         $validator = Validator::make(['email'=>$email], ['email'=>'email']);
         if($validator->fails()){
             return response()->json(['error' => 'invalid email'], 422);
@@ -98,8 +96,8 @@ class AuthController extends Controller
         foreach ($user->roles as $role) {
             $userRole [] = $role->name;
         }*/
-        $user = User::with('customer')->find($user->id);
-        return response()->success(compact('user', 'token'));
+        $user = User::with('clients')->find($user->id);
+        return Response::json(compact('user', 'token'));
 //        return response()->success(compact('user', 'token','abilities', 'userRole'));
     }
 
@@ -123,27 +121,34 @@ class AuthController extends Controller
 
         $rule = [
             'email'      => 'required|email|unique:users,email',
-            'password'   => 'required|min:6|confirmed',
-            'name'   => 'required|max:255',
+            'password'   => 'required|min:6|confirmed'
         ];
-
 
         $validator = Validator::make($request->all(), $rule);
 
         if($validator->fails()){
-            return Response::json($validator->errors(), 422);
+            return Response::json($validator->errors());
 
         }else{
             $verificationCode = Str::random(40);
             $user = new User();
             $user->email = trim(strtolower($request->email));
-            $user->name = trim(strtolower($request->name));
             $user->password = $request->password;
             $user->save();
 
-            $token = JWTAuth::fromUser($user);
+            // creation du client
 
-            return response()->success(compact('user', 'token'));
+            $client = new Clients;
+            $client->nom = trim($request->nom);
+            $client->telephone = trim($request->telephone);
+            $client->genre = trim($request->genre);
+            $client->statut = 'active';
+            $client->user_id = $user->id;
+            $client->save();
+
+            $token = JWTAuth::fromUser($user);
+            $user = User::with('clients')->find($user->id);
+            return Response::json(compact('user','client', 'token'));
         }
 
 
@@ -199,7 +204,6 @@ class AuthController extends Controller
     {
         $user = Auth::user();
         $rule = [
-            'name'       => 'min:3|max:255',
             'email'      => 'required|email|unique:users,email,'.$user->id,
             'password'   => 'min:6|confirmed'
         ];
@@ -216,7 +220,6 @@ class AuthController extends Controller
 
 
 
-        $user->name = trim($request->name);
         $user->email = trim(strtolower($request->email));
 
 

@@ -16,7 +16,7 @@ class Abonnements extends Model
     //
     use RestTrait;
 
-    protected $fillable = ['type_abonnements_id','utilisateurs_id','paiements_id','statut'];
+    protected $fillable = ['type_abonnements_id','user_id','paiements_id','statut'];
 
     protected $dates = ['created_at','updated_at'];
 

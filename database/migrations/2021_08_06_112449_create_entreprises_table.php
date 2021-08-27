@@ -21,7 +21,7 @@ class CreateEntreprisesTable extends Migration
             $table->integer('telephone');
             $table->integer('type_entreprises_id')->unsigned()->index()->nullable();
             $table->foreign('type_entreprises_id')->references('id')->on('type_entreprises');
-            $table->string('statut')->default('new');
+            $table->string('statut')->default('active');
             $table->timestamps();
         });
     }

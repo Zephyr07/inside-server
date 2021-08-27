@@ -11,7 +11,6 @@ $factory->define(\App\Paiements::class, function (Faker $faker) {
         'mode_paiement'=>$faker->text(20),
         'code_transaction'=>$faker->text(20),
         'montant'=>$faker->numberBetween(1,12),
-        'date'=>$faker->dateTime("now"),
         'statut'=>\Illuminate\Support\Arr::random(Paiements::$Status),
     ];
 });

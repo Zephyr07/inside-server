@@ -26,7 +26,7 @@ class AbonnementsRequest extends FormRequest
     public function rules(){
         $rules = [
             'type_abonnements_id'=>'required|integer|exists:type_abonnements,id',
-            'utilisateurs_id'=>'required|integer|exists:users,id',
+            'user_id'=>'required|integer|exists:users,id',
             'paiements_id'=>'required|integer|exists:paiements,id',
             'statut'=>Rule::in(Abonnements::$Status),
         ];

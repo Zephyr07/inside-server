@@ -10,6 +10,7 @@ $factory->define(Notes::class, function (Faker $faker) {
         //
         'commentaire'=>$faker->text(100),
         'valeur'=>$faker->numberBetween(1,5),
+        'user_id'=> \App\Helpers\FactoryHelper::getOrCreate(\App\User::class)->id,
         'statut'=>\Illuminate\Support\Arr::random(Notes::$Status)
     ];
 });

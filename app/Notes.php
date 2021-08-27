@@ -16,7 +16,7 @@ class Notes extends Model
     //
     use RestTrait;
 
-    protected $fillable = ['commentaire','valeur','statut'];
+    protected $fillable = ['commentaire','valeur','user_id','statut'];
 
     protected $dates = ['created_at','updated_at'];
 

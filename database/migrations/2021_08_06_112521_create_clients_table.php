@@ -19,9 +19,9 @@ class CreateClientsTable extends Migration
             $table->integer('telephone')->unique();
             $table->string('genre');
             $table->string('image')->nullable();
-            $table->integer('utilisateurs_id')->unsigned()->index()->unique();
-            $table->foreign('utilisateurs_id')->references('id')->on('users');
-            $table->string('statut')->default('new');
+            $table->integer('user_id')->unsigned()->index()->unique();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->string('statut')->default('active');
             $table->timestamps();
         });
     }

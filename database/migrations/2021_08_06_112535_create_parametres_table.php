@@ -17,8 +17,8 @@ class CreateParametresTable extends Migration
             $table->increments('id');
             $table->string('langue');
             $table->boolean('notification');
-            $table->integer('utilisateurs_id')->unsigned()->index()->nullable();
-            $table->foreign('utilisateurs_id')->references('id')->on('users')->onDelete('set null');
+            $table->integer('user_id')->unsigned()->index()->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
             $table->timestamps();
         });
     }

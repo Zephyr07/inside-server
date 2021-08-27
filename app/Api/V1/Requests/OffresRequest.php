@@ -32,7 +32,7 @@ class OffresRequest extends FormRequest
             'type'=>'required|max:255',
             'description'=>'required|max:255',
             'image'=>'required|image',
-            'sous_categories_id'=>'required|integer|exists:sous_categories,id',
+            'categories_id'=>'required|integer|exists:categories,id',
             'offres_id'=>'required|integer|exists:offres,id',
             'statut'=>Rule::in(Offres::$Status),
         ];
