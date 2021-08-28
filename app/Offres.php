@@ -16,7 +16,7 @@ class Offres extends Model
     //
     use RestTrait;
 
-    protected $fillable = ['nom','type','image','description','categories_id','statut'];
+    protected $fillable = ['nom','type','image','description','marques_id','categories_id','statut'];
 
     protected $dates = ['created_at','updated_at'];
 
