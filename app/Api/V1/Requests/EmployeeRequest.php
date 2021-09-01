@@ -28,10 +28,10 @@ class EmployeeRequest extends FormRequest
             'title'=>'required|max:255',
             'location'=>'max:255',
             'phone'=>'required|integer',
-            'email'=>'required|email|max:255|unique:users,email',
+            'email'=>'required|email|max:255',
             'ip_phone'=>'integer',
             'image'=>'image',
-            'management_id'=>'required|integer|exists:managements,id',
+            'direction_id'=>'required|integer|exists:directions,id',
             'user_id'=>'required|integer|exists:users,id',
             'sup_id'=>'integer|exists:employees,id',
         ];

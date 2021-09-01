@@ -22,12 +22,12 @@ class CreateEmployeesTable extends Migration
             $table->integer('phone');
             $table->string('location');
             $table->integer('ip_phone');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->integer('user_id')->unsigned()->index()->unique();
             $table->foreign('user_id')->references('id')->on('users');
             $table->integer('sup_id')->unsigned()->index()->nullable();
             $table->foreign('sup_id')->references('id')->on('employees');
-            $table->integer('direction_id')->unsigned()->index()->unique();
+            $table->integer('direction_id')->unsigned()->index();
             $table->foreign('direction_id')->references('id')->on('directions');
             $table->timestamps();
         });

@@ -73,7 +73,8 @@ $api->version('v1', function (Router $api) {
 
             $api->resource("users", 'UserController',['only'=>['index','show','store','update']]);
             $api->resource("entities", 'EntityController');
-            $api->resource("managements", 'ManagementController');
+            $api->resource("newsletters", 'NewsletterController');
+            $api->resource("directions", 'DirectionController');
             $api->resource("employees", 'EmployeeController');
 
             $api->group(['middleware' => ['role:comrec.user']],function(Router $api){

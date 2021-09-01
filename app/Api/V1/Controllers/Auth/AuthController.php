@@ -75,14 +75,6 @@ class AuthController extends Controller
         if(!isset($user))
             return Response::make(trans('auth.failed'), 401);
 
-        if($request->app=='comrec'&&!$user->hasRole('comrec.user')){
-            return Response::json(['error' => 'missing username'], 403);
-        }
-
-        if($request->app=='shop'&&$user->hasRole('comrec.user')){
-            return Response::json(['error' => 'missing username'], 403);
-        }
-
         try {
             if (!$token = JWTAuth::attempt($credentials)) {
                 return Response::make(trans('auth.failed'), 401);
@@ -145,7 +137,7 @@ class AuthController extends Controller
 
             $token = JWTAuth::fromUser($user);
 
-            $roles = $this->getRolesAbilities($user->roles);
+            //$roles = $this->getRolesAbilities($user->roles);
 
             return Response::json(compact('user', 'token','roles'));
 

@@ -21,7 +21,7 @@ class User extends Authenticatable implements JWTSubject
      * @var array
      */
     protected $fillable = [
-        'username', 'password','status'
+        'username', 'password','status','has_reset_password'
     ];
 
     public static $Status = ['enable', 'disable', 'pending'];

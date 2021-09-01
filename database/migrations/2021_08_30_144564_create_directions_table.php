@@ -16,9 +16,9 @@ class CreateDirectionsTable extends Migration
         Schema::create('directions', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
-            $table->string('acronym')->unique();
-            $table->integer('entity_id')->unsigned()->index()->unique();
-            $table->foreign('entity_id')->references('id')->on('entities');
+            $table->string('acronym');
+            $table->integer('entity_id')->unsigned()->index();
+            $table->foreign('entity_id')->references('id')->on('entities')->onDelete('cascade');
             $table->timestamps();
         });
     }

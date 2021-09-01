@@ -2,12 +2,11 @@
 
 namespace App\Api\V1\Requests;
 
-use App\User;
 use App\Helpers\RuleHelper;
 use Dingo\Api\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
-class UserRequest extends FormRequest
+class NewsletterEntityRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +23,9 @@ class UserRequest extends FormRequest
      */
     public function rules(){
         $rules = [
-            'username'=>'required|max:8|unique:users,username',
-            'statut'=>Rule::in(User::$Status),
-            'has_reset_password'=>'boolean',
-            'password'=>'required|min:6|max:255',
+            'name'=>'required|max:255',
+            'acronym'=>'max:10',
+            'entity_id'=>'required|integer|exists:entities,id'
         ];
         return RuleHelper::get_rules($this->method(),$rules);
     }
