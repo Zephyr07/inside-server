@@ -3,18 +3,17 @@
 namespace App;
 
 use App\Traits\RestTrait;
-use GuzzleHttp\Client;
 use Hash;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Auth;
+use Laratrust\Traits\LaratrustUserTrait;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
 class User extends Authenticatable implements JWTSubject
 {
-    use Notifiable;
-    use RestTrait;
-
-    protected $dates = ['created_at','updated_at'];
+    use Notifiable, RestTrait, LaratrustUserTrait;
 
     /**
      * The attributes that are mass assignable.
@@ -22,12 +21,10 @@ class User extends Authenticatable implements JWTSubject
      * @var array
      */
     protected $fillable = [
-        'statut', 'email', 'password','device_tokens',
+        'username', 'password','status'
     ];
 
-    protected $casts = [
-        'device_tokens' => 'array', // Will convarted to (Array)
-    ];
+    public static $Status = ['enable', 'disable', 'pending'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -38,17 +35,15 @@ class User extends Authenticatable implements JWTSubject
         'password', 'remember_token',
     ];
 
-    public function getLabel()
-    {
-        return $this->name;
-    }
-
-    public static $Status= ['active','disable'];
+    public $casts = [
+        'settings' => 'array',
+        'has_reset_password' => 'boolean'
+    ];
 
     /**
      * Automatically creates hash for the user password.
      *
-     * @param  string  $value
+     * @param  string $value
      * @return void
      */
     public function setPasswordAttribute($value)
@@ -76,12 +71,21 @@ class User extends Authenticatable implements JWTSubject
         return [];
     }
 
-    public function clients(){
-        return $this->hasOne(Clients::class);
+
+
+    public function getLabel()
+    {
+        return $this->username;
     }
 
-    public function routeNotificationForOneSignal()
+    public function employee()
     {
-        return $this->device_tokens;
+        return $this->hasOne(Employee::class);
     }
+
+    public function role()
+    {
+        return $this->hasOne(Role::class);
+    }
+
 }

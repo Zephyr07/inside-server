@@ -2,11 +2,13 @@
 
 namespace App\Api\V1\Controllers\Auth;
 
+
 use App\Http\Controllers\Controller;
-use App\Clients;
+use App\Role;
 use App\User;
+
 use Auth;
-use Browser;
+
 use Carbon\Carbon;
 use function Functional\true;
 use Hash;
@@ -16,7 +18,7 @@ use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use JWTAuth;
-use Illuminate\Support\Facades\Mail;
+use Mail;
 use Setting;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
@@ -37,9 +39,11 @@ class AuthController extends Controller
             $user = Auth::user();
             $token = JWTAuth::fromUser($user);
 
-            return response()->success(compact('user', 'token'));
+            //$roles = $this->getRolesAbilities($user->roles);
+
+            return Response::json(compact('user', 'token','roles'));
         } else {
-            return response()->error('unauthorized', 401);
+            return Response::make('unauthorized', 401);
         }
     }
 
@@ -59,46 +63,43 @@ class AuthController extends Controller
      */
     public function signin(Request $request){
 
-        $credentials = $request->only('email', 'password');
-        $email=isset($credentials["email"])?$credentials["email"]:null;
+        $credentials = $request->only('username', 'password');
+        $email=isset($credentials["username"])?$credentials["username"]:null;
         if($email==null)
-            return Response::json(['error' => 'missing login'], 403);
-        $validator = Validator::make(['email'=>$email], ['email'=>'email']);
-        if($validator->fails()){
-            return response()->json(['error' => 'invalid email'], 422);
-        }else{
-            $user = User::where('email', '=', $email)->first();
-        }
+            return Response::json(['error' => 'missing username'], 403);
+
+        $user= User::where("username","=",$email)->first();
+
 
 
         if(!isset($user))
-            return response()->error(trans('auth.failed'), 401);
+            return Response::make(trans('auth.failed'), 401);
 
-        /* if (isset($user->email_verified) && $user->email_verified == 0) {
-             return response()->error('Email Unverified');
-         }*/
+        if($request->app=='comrec'&&!$user->hasRole('comrec.user')){
+            return Response::json(['error' => 'missing username'], 403);
+        }
+
+        if($request->app=='shop'&&$user->hasRole('comrec.user')){
+            return Response::json(['error' => 'missing username'], 403);
+        }
 
         try {
             if (!$token = JWTAuth::attempt($credentials)) {
-                return response()->error(trans('auth.failed'), 401);
+                return Response::make(trans('auth.failed'), 401);
             }
         } catch (\JWTException $e) {
-            return response()->error('Could not create token', 500);
+            return Response::make('Could not create token', 500);
         }
 
 
         $user = Auth::user();
+        if($user->status=='disable')
+            return Response::json(['error' => 'account disable'], 403);
         $token = JWTAuth::fromUser($user);
 
-        /*$abilities = $this->getRolesAbilities();
-        $userRole = [];
+        //$roles = $this->getRolesAbilities($user->roles);
 
-        foreach ($user->roles as $role) {
-            $userRole [] = $role->name;
-        }*/
-        $user = User::with('clients')->find($user->id);
-        return Response::json(compact('user', 'token'));
-//        return response()->success(compact('user', 'token','abilities', 'userRole'));
+        return Response::json(compact('user', 'token','roles'));
     }
 
     /**
@@ -120,35 +121,34 @@ class AuthController extends Controller
     {
 
         $rule = [
-            'email'      => 'required|email|unique:users,email',
-            'password'   => 'required|min:6|confirmed'
+            'username'      => 'required|unique:users,username',
+            'password'   => 'required|min:5|confirmed'
         ];
+
 
         $validator = Validator::make($request->all(), $rule);
 
         if($validator->fails()){
-            return Response::json($validator->errors());
+            return Response::json($validator->errors(), 422);
 
         }else{
             $verificationCode = Str::random(40);
             $user = new User();
-            $user->email = trim(strtolower($request->email));
+            $user->username = $request->username;
+            /*$user->name = $request->name;
+            $user->email = $request->email;
+            $user->phone = $request->phone;
+            $user->bvs_id = $request->bvs_id;
+            $user->settings = isset($request->settings) ? $request->settings : [];*/
             $user->password = $request->password;
             $user->save();
 
-            // creation du client
-
-            $client = new Clients;
-            $client->nom = trim($request->nom);
-            $client->telephone = trim($request->telephone);
-            $client->genre = trim($request->genre);
-            $client->statut = 'active';
-            $client->user_id = $user->id;
-            $client->save();
-
             $token = JWTAuth::fromUser($user);
-            $user = User::with('clients')->find($user->id);
-            return Response::json(compact('user','client', 'token'));
+
+            $roles = $this->getRolesAbilities($user->roles);
+
+            return Response::json(compact('user', 'token','roles'));
+
         }
 
 
@@ -156,11 +156,11 @@ class AuthController extends Controller
 
     public function updateMe(Request $request){
         $rule = [
-            'device_tokens' => 'array',
         ];
         $user = Auth::user();
+
         if( $request->email !=null ){
-            $rule['email'] = 'required|email|unique:users,email,'.$user->id;
+            $rule['username'] = 'required|unique:users,username,'.$user->id;
         }
         $validator = Validator::make($request->all(), $rule);
 
@@ -177,7 +177,7 @@ class AuthController extends Controller
             }
 
             $user->update($request->all());
-            return response()->success(compact('user'));
+            return Response::json(compact('user'));
         }
     }
 
@@ -195,32 +195,36 @@ class AuthController extends Controller
         }
 
         //$user = Auth::user();
-        return response()->success(compact('token'));
+        return Response::json(compact('token'));
     }
+
+
+
 
 
 
     public function putMe(Request $request)
     {
         $user = Auth::user();
+        if ($user == null)
+            return response('User not found', 401);
+
         $rule = [
-            'email'      => 'required|email|unique:users,email,'.$user->id,
+            'username'      => 'required|username|unique:users,username,'.$user->id,
             'password'   => 'min:6|confirmed'
         ];
 
         if($request->password){
-            $rule['current_password'] = 'required|min:5';
+            $rule['current_password'] = 'required|min:6';
         }
 
         $validator = Validator::make($request->all(), $rule);
 
         if($validator->fails()){
-            return response()->error($validator->errors(), 422);
+            return Response::make($validator->errors(), 422);
         }
 
-
-
-        $user->email = trim(strtolower($request->email));
+        if($request->username) $user->username = trim($request->username);
 
 
 
@@ -244,16 +248,46 @@ class AuthController extends Controller
             $validator = app('validator')->make($payload, $rules, $messages);
 
             if ($validator->fails()) {
-                return response()->error($validator->errors(), 422);
+                return Response::make($validator->errors(), 422);
             } else {
                 $user->password = Hash::make($request['password']);
             }
         }
+        if(isset($request->settings)){
+            foreach ($request->settings as  $key=>$val){
+                Setting::set($key,$val, $user->id);
+            }
+            Setting::save($user->id);
+        }
 
         $user->save();
-        return response()->success(compact('user'));
+        return Response::json(compact('user'));
     }
 
-    
+    /**
+     * Get all roles and their corresponding permissions.
+     *
+     * @return array
+     */
+    private function getRolesAbilities($roles)
+    {
+
+        $abilities=[];
+        foreach ($roles as $role) {
+            if (!empty($role->name)) {
+                $abilities[$role->name] = [];
+                $rolePermission = $role->permissions()->get();
+
+                foreach ($rolePermission as $permission) {
+                    if (!empty($permission->name)) {
+                        array_push($abilities[$role->name], $permission->name);
+                    }
+                }
+            }
+        }
+
+        return $abilities;
+    }
+
 
 }
