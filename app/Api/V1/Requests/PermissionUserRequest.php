@@ -28,7 +28,6 @@ class PermissionUserRequest extends FormRequest
         $rules = [
             'permission_id'=>'required|integer|exists:permissions,id',
             'user_id'=>'required|integer|exists:users,id',
-            'user_type' => 'required'
 
         ];
 

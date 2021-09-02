@@ -19,6 +19,7 @@ class CreateNewsletterEntitiesTable extends Migration
             $table->foreign('entity_id')->references('id')->on('entities')->onDelete('cascade');
             $table->integer('newsletter_id')->unsigned()->index();
             $table->foreign('newsletter_id')->references('id')->on('newsletters')->onDelete('cascade');
+            $table->unique(['newsletter_id', 'entity_id']);
             $table->timestamps();
         });
     }

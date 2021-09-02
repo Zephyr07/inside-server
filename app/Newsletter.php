@@ -16,7 +16,7 @@ class Newsletter extends Model
     //
     use RestTrait;
 
-    protected $fillable = ['title','description','type','image','file','date', 'location', 'entity_id', 'group_id', 'direction_id'];
+    protected $fillable = ['title','description','type','image','file','date', 'location'];
 
     protected $dates = ['created_at','updated_at'];
 

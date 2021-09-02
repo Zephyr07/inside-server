@@ -27,8 +27,7 @@ class RoleUserRequest extends FormRequest
     {
         $rules = [
             'role_id'=>'required|integer|exists:roles,id',
-            'user_id'=>'required|integer|exists:users,id',
-            'user_type' => 'required'
+            'user_id'=>'required|integer|exists:users,id'
 
         ];
 

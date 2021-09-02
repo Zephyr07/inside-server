@@ -22,12 +22,6 @@ class CreateNewslettersTable extends Migration
             $table->dateTime('date')->nullable();
             $table->string('location')->nullable();
             $table->string('file')->nullable();
-            $table->integer('entity_id')->unsigned()->index()->nullable();
-            $table->foreign('entity_id')->references('id')->on('entities');
-            $table->integer('group_id')->unsigned()->index()->nullable();
-            $table->foreign('group_id')->references('id')->on('groups');
-            $table->integer('direction_id')->unsigned()->index()->nullable();
-            $table->foreign('direction_id')->references('id')->on('directions');
             $table->timestamps();
         });
     }

@@ -3,27 +3,24 @@
 namespace App;
 
 use App\Traits\RestTrait;
-use Illuminate\Database\Eloquent\Model;
+use Laratrust\Models\LaratrustRole;
 
-class Role extends Model
+class Role extends LaratrustRole
 {
     //
     use RestTrait;
 
-    public function __construct(array $attributes = [])
-    {
-        $this->foreign = ['permissions'];
-        parent::__construct($attributes);
-    }
+    protected $fillable = ['name','display_name','description'];
+
+    protected $dates = ['created_at','updated_at'];
 
     public function getLabel()
     {
-        return $this->name;
+        return $this->name ;
     }
 
-    protected $fillable = ['id', 'name', 'code', 'description', 'level'];
-
-
-    protected $dates = ['created_at', 'updated_at'];
-
+    public function users(){
+        return $this->belongsToMany(User::class)
+            ->withPivot('id','user_id','role_id');
+    }
 }

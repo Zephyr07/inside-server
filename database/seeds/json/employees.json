@@ -1,0 +1,54 @@
+[
+  {
+    "first_name":"SARRA",
+    "last_name":"Guillaume",
+    "title": "CEO",
+    "email": "gui@bvssas.com",
+    "phone": 699009920,
+    "ip_phone": 21010,
+    "location": "Douala",
+    "image": "sarra.jpg",
+    "user": "bvsarr01",
+    "sup" : "",
+    "direction": "Direction Générale"
+  },
+  {
+    "first_name":"SOUMAHORO",
+    "last_name":"Stéphane",
+    "title": "Directeur Général",
+    "email": "soum@bvssas.com",
+    "phone": 690009920,
+    "ip_phone": 20010,
+    "location": "Douala",
+    "image": "soum.jpg",
+    "sup" : "SARRA",
+    "user": "bvsoum01",
+    "direction": "Direction Générale"
+  },
+  {
+    "first_name":"KOYOU",
+    "last_name":"Carine",
+    "title": "Directeur Administratif et Financier",
+    "email": "koy@bvssas.com",
+    "phone": 690509920,
+    "ip_phone": 20310,
+    "location": "Douala",
+    "image": "koy.jpg",
+    "sup" : "SOUMAHORO",
+    "user": "bvkoyo01",
+    "direction": "Direction Administrative et Financière"
+  },
+  {
+    "first_name":"NANDA",
+    "last_name":"Edward",
+    "title": "Responsable des Systèmes d'Information",
+    "email": "nanda@bvssas.com",
+    "phone": 699009900,
+    "ip_phone": 21000,
+    "location": "Douala",
+    "image": "edward.jpg",
+    "sup" : "KOYOU",
+    "user": "bvnand01",
+    "direction": "Direction Administrative et Financière"
+  }
+]

@@ -16,10 +16,11 @@ class CreateMembersTable extends Migration
         Schema::create('members', function (Blueprint $table) {
             $table->increments('id');
             $table->string('profile');
-            $table->integer('group_id')->unsigned()->index()->unique();
-            $table->foreign('group_id')->references('id')->on('groups');
-            $table->integer('employee_id')->unsigned()->index()->unique();
-            $table->foreign('employee_id')->references('id')->on('employees');
+            $table->integer('group_id')->unsigned()->index();
+            $table->foreign('group_id')->references('id')->on('groups')->onDelete('cascade');
+            $table->integer('employee_id')->unsigned()->index();
+            $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');
+            $table->unique(['group_id', 'employee_id']);
             $table->timestamps();
         });
     }

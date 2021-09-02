@@ -1,7 +1,30 @@
 [
 	{
-		"name":"Edward NANDA",
-		"email":"enanda52@gmail.com",
-		"password":"aaaaaa"
+		"username":"bvsarr01",
+		"password":"password",
+		"roles" : [
+			"Managers BVS"
+		]
+	},
+	{
+		"username":"bvsoum01",
+		"password":"password",
+		"roles" : [
+			"Managers BVS"
+		]
+	},
+	{
+		"username":"bvkoyo01",
+		"password":"password",
+		"roles" : [
+			"Managers BVS"
+		]
+	},
+	{
+		"username":"bvnand01",
+		"password":"T@rija690",
+		"roles" : [
+			"super.administrator"
+		]
 	}
 ]

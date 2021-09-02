@@ -16,15 +16,15 @@ class CreateEmployeesTable extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->increments('id');
             $table->string('first_name');
-            $table->string('last_name');
+            $table->string('last_name')->nullable();
             $table->string('title');
-            $table->string('email');
+            $table->string('email')->nullable();
             $table->integer('phone');
             $table->string('location');
             $table->integer('ip_phone');
             $table->string('image')->nullable();
             $table->integer('user_id')->unsigned()->index()->unique();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->integer('sup_id')->unsigned()->index()->nullable();
             $table->foreign('sup_id')->references('id')->on('employees');
             $table->integer('direction_id')->unsigned()->index();

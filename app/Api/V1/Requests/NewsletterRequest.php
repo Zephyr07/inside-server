@@ -30,9 +30,6 @@ class NewsletterRequest extends FormRequest
             'location'=>'max:255',
             'image'=>'image',
             'file'=>'max:255',
-            'management_id'=>'required|integer|exists:managements,id',
-            'entity_id'=>'required|integer|exists:entities,id',
-            'group_id'=>'integer|exists:groups,id',
         ];
         return RuleHelper::get_rules($this->method(),$rules);
     }

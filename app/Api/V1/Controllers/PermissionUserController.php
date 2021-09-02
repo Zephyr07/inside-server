@@ -34,14 +34,12 @@ class PermissionUserController extends Controller
             $request, [
                 'user_id'=>'required|integer|exists:users,id',
                 'permission_id'=>'required|integer|exists:permissions,id',
-                'user_type' => 'required'
             ]
         );
 
         $permission_user = new PermissionUser;
         $permission_user->user_id = $request->get('user_id');
         $permission_user->permission_id = $request->get('permission_id');
-        $permission_user->user_type = $request->get('user_type');
         $permission_user->save();
 
         return Response::json($permission_user, 200);

@@ -19,6 +19,7 @@ class CreateNewsletterDirectionsTable extends Migration
             $table->foreign('direction_id')->references('id')->on('directions')->onDelete('cascade');
             $table->integer('newsletter_id')->unsigned()->index();
             $table->foreign('newsletter_id')->references('id')->on('newsletters')->onDelete('cascade');
+            $table->unique(['newsletter_id', 'direction_id']);
             $table->timestamps();
         });
     }

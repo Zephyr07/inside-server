@@ -3,6 +3,7 @@
 namespace App\Api\V1\Requests;
 
 use App\Helpers\RuleHelper;
+use App\Member;
 use Dingo\Api\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
@@ -23,7 +24,7 @@ class MemberRequest extends FormRequest
      */
     public function rules(){
         $rules = [
-            'profile'=>'required|max:255',
+            'profile'=>Rule::in(Member::$Profile),
             'group_id'=>'required|integer|exists:groups,id',
             'employee_id'=>'required|integer|exists:employees,id'
         ];

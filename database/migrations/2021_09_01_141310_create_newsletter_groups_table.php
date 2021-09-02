@@ -19,6 +19,7 @@ class CreateNewsletterGroupsTable extends Migration
             $table->foreign('group_id')->references('id')->on('groups')->onDelete('cascade');
             $table->integer('newsletter_id')->unsigned()->index();
             $table->foreign('newsletter_id')->references('id')->on('newsletters')->onDelete('cascade');
+            $table->unique(['newsletter_id', 'group_id']);
             $table->timestamps();
         });
     }

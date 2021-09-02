@@ -20,14 +20,15 @@ class Member extends Model
 
     protected $dates = ['created_at','updated_at'];
 
+    public static $Profile = ['owner', 'member'];
 
     public function getLabel()
     {
         return $this->profile ;
     }
 
-    public function  employees(){
-        return $this->hasMany(Employee::class);
+    public function  employee(){
+        return $this->belongsTo(Employee::class);
     }
 
     public function  groups(){

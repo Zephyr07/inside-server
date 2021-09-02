@@ -33,8 +33,7 @@ class RoleUserController extends Controller
         $this->validate(
             $request, [
                 'user_id'=>'required|integer|exists:users,id',
-                'role_id'=>'required|integer|exists:roles,id',
-                'user_type' => 'required'
+                'role_id'=>'required|integer|exists:roles,id'
             ]
         );
         $role_user = RoleUser::where('user_id', $request->get('user_id'))
@@ -45,7 +44,6 @@ class RoleUserController extends Controller
         $role_user = new RoleUser;
         $role_user->user_id = $request->get('user_id');
         $role_user->role_id = $request->get('role_id');
-        $role_user->user_type = $request->get('user_type');
         $role_user->save();
 
         return Response::json($role_user, 200);
