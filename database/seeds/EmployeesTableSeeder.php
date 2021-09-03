@@ -24,10 +24,10 @@ class EmployeesTableSeeder extends Seeder
                 $item['user_id'] = $u->id;
                 $item['direction_id'] = $d->id;
                 if(isset($item['image'])){
-                    $fop =base_path("database/seeds/json/images/employees/".$item['image']);
+                    $fop =base_path("database/seeds/json/images/employee/".$item['image']);
                     if (Storage::has($fop))
                         Storage::delete($fop);
-                    $fpath = "img/employees/" . uniqid() .'_'. $item['image'].'.png' ;
+                    $fpath = "img/employee/" . uniqid() .'_'. $item['image'].'.png' ;
                     $item['image'] = $fpath;
                     Storage::put($fpath, File::get($fop));
                 }

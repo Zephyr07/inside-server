@@ -77,6 +77,10 @@ $api->version('v1', function (Router $api) {
             $api->resource("directions", 'DirectionController');
             $api->resource("groups", 'GroupController');
             $api->resource("members", 'MemberController');
+            $api->resource("newsletters", 'NewsletterController');
+            $api->resource("newsletter_groups", 'NewsletterGroupController');
+            $api->resource("newsletter_directions", 'NewsletterDirectionController');
+            $api->resource("newsletter_entities", 'NewsletterEntityController');
             $api->resource("employees", 'EmployeeController');
 
             $api->group(['middleware' => ['role:comrec.user']],function(Router $api){

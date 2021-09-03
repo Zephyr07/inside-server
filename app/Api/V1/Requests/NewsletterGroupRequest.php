@@ -23,9 +23,8 @@ class NewsletterGroupRequest extends FormRequest
      */
     public function rules(){
         $rules = [
-            'name'=>'required|max:255',
-            'acronym'=>'max:10',
-            'entity_id'=>'required|integer|exists:entities,id'
+            'newsletter_id'=>'required|integer|exists:newsletters,id',
+            'group_id'=>'required|integer|exists:groups,id'
         ];
         return RuleHelper::get_rules($this->method(),$rules);
     }

@@ -27,6 +27,7 @@ class EmployeeRequest extends FormRequest
             'last_name'=>'max:255',
             'title'=>'required|max:255',
             'location'=>'max:255',
+            'birthday'=>'required|date',
             'phone'=>'required|integer',
             'email'=>'required|email|max:255',
             'ip_phone'=>'integer',

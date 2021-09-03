@@ -23,8 +23,7 @@ class NewsletterEntityRequest extends FormRequest
      */
     public function rules(){
         $rules = [
-            'name'=>'required|max:255',
-            'acronym'=>'max:10',
+            'newsletter_id'=>'required|integer|exists:newsletters,id',
             'entity_id'=>'required|integer|exists:entities,id'
         ];
         return RuleHelper::get_rules($this->method(),$rules);

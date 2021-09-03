@@ -22,11 +22,19 @@ class Newsletter extends Model
 
     public function  __construct(array $attributes = [])
     {
-        $this->files = ['image'];
+        $this->files = ['image','file'];
         parent::__construct($attributes);
     }
 
     public function getImageAttribute($val)
+    {
+        if($val==null){
+            $val='default/img/inside.jpg';
+        }
+        return env('APP_URL').$val;
+    }
+
+    public function getFileAttribute($val)
     {
         if($val==null){
             $val='default/img/inside.jpg';
@@ -39,16 +47,16 @@ class Newsletter extends Model
         return $this->title ;
     }
 
-    public function  entity(){
-        return $this->belongsTo(Employee::class);
+    public function  newsletter_entities(){
+        return $this->hasMany(NewsletterEntity::class);
     }
 
-    public function  direction(){
-        return $this->belongsTo(Direction::class);
+    public function  newsletter_directions(){
+        return $this->hasMany(NewsletterDirection::class);
     }
 
-    public function  group(){
-        return $this->belongsTo(Group::class);
+    public function  newsletter_groups(){
+        return $this->hasMany(NewsletterGroup::class);
     }
 
 }

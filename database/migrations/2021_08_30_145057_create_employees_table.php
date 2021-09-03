@@ -19,9 +19,10 @@ class CreateEmployeesTable extends Migration
             $table->string('last_name')->nullable();
             $table->string('title');
             $table->string('email')->nullable();
+            $table->date('birthday');
             $table->integer('phone');
             $table->string('location');
-            $table->integer('ip_phone');
+            $table->integer('ip_phone')->nullable();
             $table->string('image')->nullable();
             $table->integer('user_id')->unsigned()->index()->unique();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
@@ -29,6 +30,7 @@ class CreateEmployeesTable extends Migration
             $table->foreign('sup_id')->references('id')->on('employees');
             $table->integer('direction_id')->unsigned()->index();
             $table->foreign('direction_id')->references('id')->on('directions');
+            $table->unique(['user_id', 'sup_id']);
             $table->timestamps();
         });
     }

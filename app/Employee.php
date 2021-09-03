@@ -16,7 +16,7 @@ class Employee extends Model
     //
     use RestTrait;
 
-    protected $fillable = ['first_name','last_name','title','location','ip_phone','phone','image','email','user_id','sup_id','direction_id'];
+    protected $fillable = ['first_name','last_name','title','birthday','location','ip_phone','phone','image','email','user_id','sup_id','direction_id'];
 
     protected $dates = ['created_at','updated_at'];
 

@@ -21,7 +21,6 @@ class CreateNewslettersTable extends Migration
             $table->string('image')->nullable();
             $table->dateTime('date')->nullable();
             $table->string('location')->nullable();
-            $table->string('file')->nullable();
             $table->timestamps();
         });
     }

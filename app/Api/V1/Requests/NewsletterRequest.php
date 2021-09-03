@@ -28,8 +28,6 @@ class NewsletterRequest extends FormRequest
             'type'=>'required|max:255',
             'date'=>'date',
             'location'=>'max:255',
-            'image'=>'image',
-            'file'=>'max:255',
         ];
         return RuleHelper::get_rules($this->method(),$rules);
     }

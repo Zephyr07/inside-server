@@ -23,9 +23,8 @@ class NewsletterDirectionRequest extends FormRequest
      */
     public function rules(){
         $rules = [
-            'name'=>'required|max:255',
-            'acronym'=>'max:10',
-            'entity_id'=>'required|integer|exists:entities,id'
+            'newsletter_id'=>'required|integer|exists:newsletters,id',
+            'direction_id'=>'required|integer|exists:directions,id'
         ];
         return RuleHelper::get_rules($this->method(),$rules);
     }
