@@ -11,28 +11,21 @@ namespace App;
 use App\Traits\RestTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Member extends Model
+class Rating extends Model
 {
     //
     use RestTrait;
 
-    protected $fillable = ['profile','employee_id', 'group_id'];
+    protected $fillable = ['content','image', 'post_id','employee_id'];
 
     protected $dates = ['created_at','updated_at'];
-
-    public static $Profile = ['owner', 'member'];
-
-    public function getLabel()
-    {
-        return $this->profile ;
-    }
 
     public function  employee(){
         return $this->belongsTo(Employee::class);
     }
 
-    public function  group(){
-        return $this->belongsTo(Group::class);
+    public function  posts(){
+        return $this->belongsTo(Post::class);
     }
 
 }

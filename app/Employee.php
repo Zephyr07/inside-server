@@ -48,6 +48,6 @@ class Employee extends Model
     }
 
     public function  direction(){
-        return $this->hasOne(Direction::class);
+        return $this->belongsTo(Direction::class);
     }
 }

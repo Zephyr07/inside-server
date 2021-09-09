@@ -68,14 +68,16 @@ $api->version('v1', function (Router $api) {
             $api->group(['prefix' => 'users'], function(Router $api) {
                 $api->get('me', 'UserController@me');
                 $api->post('updateMe', 'Auth\AuthController@updateMe');
+                $api->post('update_info', 'Auth\AuthController@updateMe');
                 $api->post('set-pin-code', 'Auth\AuthController@setPinCode');
             });
-
-            $api->resource("users", 'UserController',['only'=>['index','show','store','update']]);
+            $api->resource("posts", 'PostController');
+            $api->resource("users", 'UserController');
             $api->resource("entities", 'EntityController');
             $api->resource("newsletters", 'NewsletterController');
             $api->resource("directions", 'DirectionController');
             $api->resource("groups", 'GroupController');
+            $api->resource("ratings", 'RatingController');
             $api->resource("members", 'MemberController');
             $api->resource("newsletters", 'NewsletterController');
             $api->resource("newsletter_groups", 'NewsletterGroupController');
@@ -83,7 +85,7 @@ $api->version('v1', function (Router $api) {
             $api->resource("newsletter_entities", 'NewsletterEntityController');
             $api->resource("employees", 'EmployeeController');
 
-            $api->group(['middleware' => ['role:comrec.user']],function(Router $api){
+            $api->group(['middleware' => ['role:super.administrator']],function(Router $api){
 
                 $api->resource("bills", 'BillController');
                 $api->resource("customers", 'CustomerController');
@@ -93,7 +95,7 @@ $api->version('v1', function (Router $api) {
                 $api->resource("roles", 'RoleController');
 
             });
-            $api->group(['middleware' => ['role:comrec.user']],function(Router $api){
+            $api->group(['middleware' => ['role:super.administrator']],function(Router $api){
                 $api->get("permission_users", 'PermissionUserController@index');
                 $api->get("permission_users/{role_id}/{user_id}", 'PermissionUserController@show');
                 $api->post("permission_users", 'PermissionUserController@store');

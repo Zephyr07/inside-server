@@ -88,8 +88,8 @@ class AuthController extends Controller
         if($user->status=='disable')
             return Response::json(['error' => 'account disable'], 403);
         $token = JWTAuth::fromUser($user);
-
-        //$roles = $this->getRolesAbilities($user->roles);
+        $user = User::with('employee')->find($user->id);
+        $roles = $this->getRolesAbilities($user->roles);
 
         return Response::json(compact('user', 'token','roles'));
     }
@@ -137,7 +137,7 @@ class AuthController extends Controller
 
             $token = JWTAuth::fromUser($user);
 
-            //$roles = $this->getRolesAbilities($user->roles);
+            $roles = $this->getRolesAbilities($user->roles);
 
             return Response::json(compact('user', 'token','roles'));
 
@@ -151,7 +151,7 @@ class AuthController extends Controller
         ];
         $user = Auth::user();
 
-        if( $request->email !=null ){
+        if( $request->username !=null ){
             $rule['username'] = 'required|unique:users,username,'.$user->id;
         }
         $validator = Validator::make($request->all(), $rule);
@@ -252,7 +252,7 @@ class AuthController extends Controller
             Setting::save($user->id);
         }
 
-        $user->save();
+        $user->update();
         return Response::json(compact('user'));
     }
 

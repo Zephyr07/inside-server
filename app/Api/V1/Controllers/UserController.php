@@ -32,7 +32,7 @@ class UserController extends Controller
      */
     public function me()
     {
-        return Response::json(Auth::guard()->user());
+        return response()->json(Auth::guard()->user());
     }
 
     /**
@@ -42,6 +42,8 @@ class UserController extends Controller
     public function index(){
         return RestHelper::get(User::class);
     }
+
+
     /**
      * Show the form for creating a new user.
      *
@@ -51,6 +53,7 @@ class UserController extends Controller
     {
         //
     }
+
     /**
      * Action to be execute to store a newly created user in storage.
      *
@@ -60,6 +63,7 @@ class UserController extends Controller
     {
         return RestHelper::store(User::class,$request->all());
     }
+
     /**
      * Display the specified user. given the ID
      *
@@ -70,6 +74,7 @@ class UserController extends Controller
     {
         return RestHelper::show(User::class,$id);
     }
+
     /**
      * Show the form for editing the specified user.
      *
@@ -80,6 +85,7 @@ class UserController extends Controller
     {
         //
     }
+
     /**
      * Update the specified user in databse.
      *
@@ -91,6 +97,7 @@ class UserController extends Controller
     {
         return RestHelper::update(User::class,$request->all(),$id);
     }
+
     /**
      * Remove the specified user from database given his id.
      *
