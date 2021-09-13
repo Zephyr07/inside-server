@@ -76,8 +76,10 @@ $api->version('v1', function (Router $api) {
             $api->resource("entities", 'EntityController');
             $api->resource("newsletters", 'NewsletterController');
             $api->resource("directions", 'DirectionController');
+            $api->resource("partners", 'PartnerController');
             $api->resource("groups", 'GroupController');
             $api->resource("ratings", 'RatingController');
+            $api->resource("contents", 'ContentController');
             $api->resource("members", 'MemberController');
             $api->resource("newsletters", 'NewsletterController');
             $api->resource("newsletter_groups", 'NewsletterGroupController');

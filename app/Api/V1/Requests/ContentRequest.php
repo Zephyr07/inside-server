@@ -2,12 +2,11 @@
 
 namespace App\Api\V1\Requests;
 
-use App\User;
 use App\Helpers\RuleHelper;
 use Dingo\Api\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
-class UserRequest extends FormRequest
+class ContentRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +23,9 @@ class UserRequest extends FormRequest
      */
     public function rules(){
         $rules = [
-            'username'=>'required|max:8|unique:users,username',
-            'status'=>Rule::in(User::$Status),
-            'has_reset_password'=>'boolean',
-            'password'=>'required|min:6|max:255',
+            'title'=>'required|max:255',
+            'description'=>'required',
+            'type'=>'max:30',
         ];
         return RuleHelper::get_rules($this->method(),$rules);
     }

@@ -3,6 +3,7 @@
 namespace App\Api\V1\Requests;
 
 use App\Helpers\RuleHelper;
+use App\Partner;
 use Dingo\Api\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
@@ -27,6 +28,7 @@ class PartnerRequest extends FormRequest
             'address'=>'max:255',
             'phone'=>'required|integer',
             'manager'=>'max:255',
+            'status'=>Rule::in(Partner::$Status),
             'entity_id'=>'required|integer|exists:entities,id'
         ];
         return RuleHelper::get_rules($this->method(),$rules);

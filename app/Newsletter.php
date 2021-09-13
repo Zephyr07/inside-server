@@ -37,7 +37,7 @@ class Newsletter extends Model
     public function getFileAttribute($val)
     {
         if($val==null){
-            $val='default/img/inside.jpg';
+            $val='default/img/logo_03.png';
         }
         return env('APP_URL').$val;
     }

@@ -3,21 +3,21 @@
 		"username":"bvsarr01",
 		"password":"password",
 		"roles" : [
-			"Managers BVS"
+			"manager.bvs"
 		]
 	},
 	{
 		"username":"bvsoum01",
 		"password":"password",
 		"roles" : [
-			"Managers BVS"
+			"manager.bvs"
 		]
 	},
 	{
 		"username":"bvkoyo01",
 		"password":"password",
 		"roles" : [
-			"Managers BVS"
+			"manager.bvs"
 		]
 	},
 	{
@@ -25,6 +25,48 @@
 		"password":"T@rija690",
 		"roles" : [
 			"super.administrator"
+		]
+	},
+	{
+		"username":"bvnino01",
+		"password":"password",
+		"roles" : [
+			"employee.bvs"
+		]
+	},
+	{
+		"username":"bvdjo01",
+		"password":"password",
+		"roles" : [
+			"employee.bvs"
+		]
+	},
+	{
+		"username":"bvkemb01",
+		"password":"password",
+		"roles" : [
+			"employee.bvs"
+		]
+	},
+	{
+		"username":"bvjuis01",
+		"password":"password",
+		"roles" : [
+			"employee.bvs"
+		]
+	},
+	{
+		"username":"bvmben01",
+		"password":"password",
+		"roles" : [
+			"employee.bvs"
+		]
+	},
+	{
+		"username":"bvtema01",
+		"password":"password",
+		"roles" : [
+			"employee.bvs"
 		]
 	}
 ]

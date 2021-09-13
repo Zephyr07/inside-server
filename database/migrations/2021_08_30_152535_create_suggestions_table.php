@@ -17,7 +17,7 @@ class CreateSuggestionsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('status')->default('new');
-            $table->string('description',1500);
+            $table->text('description',1500);
             $table->integer('employee_id')->unsigned()->index();
             $table->foreign('employee_id')->references('id')->on('employees')->onDelete('cascade');
 

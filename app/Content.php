@@ -11,12 +11,12 @@ namespace App;
 use App\Traits\RestTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Employee extends Model
+class Content extends Model
 {
     //
     use RestTrait;
 
-    protected $fillable = ['first_name','last_name','title','birthday','location','ip_phone','phone','image','email','user_id','sup_id','direction_id'];
+    protected $fillable = ['type','description','title','image','email'];
 
     protected $dates = ['created_at','updated_at'];
 
@@ -28,7 +28,7 @@ class Employee extends Model
 
     public function getLabel()
     {
-        return $this->nom ;
+        return $this->title ;
     }
 
     public function getImageAttribute($val)
@@ -37,17 +37,5 @@ class Employee extends Model
             $val='default/img/logo_03.png';
         }
         return env('APP_URL').$val;
-    }
-
-    public function  user(){
-        return $this->belongsTo(User::class);
-    }
-
-    public function  collaboraters(){
-        return $this->hasMany(Employee::class);
-    }
-
-    public function  direction(){
-        return $this->belongsTo(Direction::class);
     }
 }

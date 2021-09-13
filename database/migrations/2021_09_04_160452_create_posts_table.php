@@ -15,7 +15,7 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('content');
+            $table->text('content');
             $table->string('image')->nullable();
             $table->integer('post_id')->unsigned()->index()->nullable();
             $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade');

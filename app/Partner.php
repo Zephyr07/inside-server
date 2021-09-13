@@ -21,6 +21,8 @@ class Partner extends Model
     protected $dates = ['created_at','updated_at'];
 
 
+    public static $Status = ['enable', 'disable', 'pending'];
+
     public function getLabel()
     {
         return $this->name ;

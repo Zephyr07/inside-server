@@ -1,12 +1,37 @@
 [
 	{
-		"name":"Direction Générale",
+		"name":"Direction Générale BDC",
 		"acronym": "DG",
 		"entity": "BVS Distribution Cameroun"
 	},
 	{
-		"name":"Direction Administrative et Financière",
+		"name":"Direction Administrative et Financière BDC",
 		"acronym": "DAF",
 		"entity": "BVS Distribution Cameroun"
+	},
+	{
+		"name":"Direction Générale BPC",
+		"acronym": "DG",
+		"entity": "BVS Production Cameroun"
+	},
+	{
+		"name":"Direction Administrative et Financière BPC",
+		"acronym": "DAF",
+		"entity": "BVS Production Cameroun"
+	},
+	{
+		"name":"Direction Communication et Marketing",
+		"acronym": "DCM",
+		"entity": "BVS Distribution Cameroun"
+	},
+	{
+		"name":"Direction des Ventes",
+		"acronym": "DV",
+		"entity": "BVS Distribution Cameroun"
+	},
+	{
+		"name":"Direction Production",
+		"acronym": "DP",
+		"entity": "BVS Production Cameroun"
 	}
 ]

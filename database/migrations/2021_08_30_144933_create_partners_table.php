@@ -19,7 +19,7 @@ class CreatePartnersTable extends Migration
             $table->string('address');
             $table->string('manager');
             $table->integer('phone');
-            $table->string('status');
+            $table->string('status')->default('enable');
             $table->integer('entity_id')->unsigned()->index()->unique();
             $table->foreign('entity_id')->references('id')->on('entities');
             $table->timestamps();

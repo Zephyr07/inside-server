@@ -8,10 +8,10 @@
     "ip_phone": 21010,
     "birthday": "2021-04-29",
     "location": "Douala",
-    "image": "sarra.jpg",
+    "image": "logo_03.png",
     "user": "bvsarr01",
     "sup" : "",
-    "direction": "Direction Générale"
+    "direction": "Direction Générale BDC"
   },
   {
     "first_name":"SOUMAHORO",
@@ -22,10 +22,10 @@
     "ip_phone": 20010,
     "birthday": "2021-05-07",
     "location": "Douala",
-    "image": "soum.jpg",
+    "image": "SOUMAHORO.jpg",
     "sup" : "SARRA",
     "user": "bvsoum01",
-    "direction": "Direction Générale"
+    "direction": "Direction Générale BDC"
   },
   {
     "first_name":"KOYOU",
@@ -36,15 +36,15 @@
     "ip_phone": 20310,
     "location": "Douala",
     "birthday": "2021-08-25",
-    "image": "koy.jpg",
+    "image": "KOYOU.jpg",
     "sup" : "SOUMAHORO",
     "user": "bvkoyo01",
-    "direction": "Direction Administrative et Financière"
+    "direction": "Direction Administrative et Financière BDC"
   },
   {
     "first_name":"NANDA",
     "last_name":"Edward",
-    "title": "Responsable des Systèmes d'Information",
+    "title": "Responsable des Systèmes d'Informations",
     "email": "nanda@bvssas.com",
     "phone": 699009900,
     "ip_phone": 21000,
@@ -53,6 +53,90 @@
     "image": "edward.jpg",
     "sup" : "KOYOU",
     "user": "bvnand01",
-    "direction": "Direction Administrative et Financière"
+    "direction": "Direction Administrative et Financière BDC"
+  },
+  {
+    "first_name":"DJOUM",
+    "last_name":"Hermand",
+    "title": "Chef de Département Comptabilité et Finance",
+    "email": "hdjoum@bvssas.com",
+    "phone": 691009900,
+    "ip_phone": 22000,
+    "birthday": "2021-10-17",
+    "location": "Douala",
+    "image": "DJOUM.jpg",
+    "sup" : "KOYOU",
+    "user": "bvdjo01",
+    "direction": "Direction Administrative et Financière BDC"
+  },
+  {
+    "first_name":"BOUCHE",
+    "last_name":"Pelagie",
+    "title": "Superviseur Comptable Yaoundé",
+    "email": "aninon@bvssas.com",
+    "phone": 699009910,
+    "ip_phone": 21020,
+    "birthday": "2021-09-17",
+    "location": "Yaoundé",
+    "image": "BOUCHE.jpg",
+    "sup" : "DJOUM",
+    "user": "bvnino01",
+    "direction": "Direction Administrative et Financière BDC"
+  },
+  {
+    "first_name":"KEMBOU",
+    "last_name":"Wilfried",
+    "title": "Administrateur Système et Réseau",
+    "email": "wkembou@bvssas.com",
+    "phone": 699029910,
+    "ip_phone": 21402,
+    "birthday": "2021-11-17",
+    "location": "Douala",
+    "image": "KEMBOU.jpg",
+    "sup" : "NANDA",
+    "user": "bvkemb01",
+    "direction": "Direction Administrative et Financière BDC"
+  },
+  {
+    "first_name":"JUISSOP",
+    "last_name":"Aristide",
+    "title": "Comptable Fournisseurs",
+    "email": "ajuissop@bvssas.com",
+    "phone": 699087910,
+    "ip_phone": 21102,
+    "birthday": "2021-12-17",
+    "location": "Douala",
+    "image": "JUISSOP.jpg",
+    "sup" : "DJOUM",
+    "user": "bvjuis01",
+    "direction": "Direction Administrative et Financière BDC"
+  },
+  {
+    "first_name":"MBEN",
+    "last_name":"Ferdinand",
+    "title": "Comptable Clients",
+    "email": "fmben@bvssas.com",
+    "phone": 699787910,
+    "ip_phone": 21103,
+    "birthday": "2021-07-17",
+    "location": "Douala",
+    "image": "MBEN.jpg",
+    "sup" : "DJOUM",
+    "user": "bvmben01",
+    "direction": "Direction Administrative et Financière BDC"
+  },
+  {
+    "first_name":"JABEA",
+    "last_name":"Suzanne",
+    "title": "Assistante, Chargée de la Fiscalité",
+    "email": "stematio@bvssas.com",
+    "phone": 693787910,
+    "ip_phone": 21001,
+    "birthday": "2021-07-17",
+    "location": "Douala",
+    "image": "JABEA.jpg",
+    "sup" : "KOYOU",
+    "user": "bvtema01",
+    "direction": "Direction Administrative et Financière BDC"
   }
 ]
