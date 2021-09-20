@@ -23,7 +23,7 @@
     "foris-master/mtn-mobile-money-sdk": "^1.0@dev",
     "foris-master/orange-money-sdk": "^0.7.0",
     "foxxmd/laravel-elasticbeanstalk-cron": "^0.2.0",
-    "guzzlehttp/guzzle": "^6.3",
+    "guzzlehttp/guzzle": "^6.5",
     "laravel/framework": "5.8.*",
     "laravel/tinker": "^1.0",
     "league/flysystem-aws-s3-v3": "^1.0",
