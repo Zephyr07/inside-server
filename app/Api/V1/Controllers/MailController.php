@@ -2,14 +2,15 @@
 
 namespace App\Api\V1\Controllers;
 
-use App\Api\V1\Requests\NewsletterGroupRequest;
+use App\Api\V1\Requests\ContentRequest;
+use App\Content;
+use App\Employee;
 use App\Group;
+use App\Helpers\RestHelper;
 use App\Mail\NotificationMail;
 use App\Member;
 use App\Newsletter;
 use App\NewsletterGroup;
-use App\Helpers\RestHelper;
-use Illuminate\Support\Facades\Mail;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Tymon\JWTAuth\JWTAuth;
 use App\Http\Controllers\Controller;
@@ -18,17 +19,17 @@ use Tymon\JWTAuth\Exceptions\JWTException;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Auth;
 
-class NewsletterGroupController extends Controller
+class MailController extends Controller
 {
     /**
-     * Start action, use to show all newsletter_groups inside the database
+     * Start action, use to show all contents inside the database
      * @return \Illuminate\Http\JsonResponse
      */
     public function index(){
-        return RestHelper::get(NewsletterGroup::class);
+        return RestHelper::get(Content::class);
     }
     /**
-     * Show the form for creating a new newsletter_group.
+     * Show the form for creating a new content.
      *
      * @return \Illuminate\Http\Response
      */
@@ -37,59 +38,58 @@ class NewsletterGroupController extends Controller
         //
     }
     /**
-     * Action to be execute to store a newly created newsletter_group in storage.
+     * Action to be execute to store a newly created content in storage.
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function store(NewsletterGroupRequest $request)
+    public function sendGroupMail(NewsletterGroup $request)
     {
         // recuperation de la newsletter
-        $newsletter= Newsletter::where("id","=",$request->newsletter_id)->first();
+        $newsletter= Newsletter::where("id","=",$request->newsletter_id);
         $group= Group::where("id","=",$request->group_id);
         // recuperation des employé de ce groupe
         $employees = Member::with('employee')->where('group_id',"=",$request->group_id);
         Mail::to('enanda52@gmail.com')->send(new NotificationMail($newsletter));
-        return RestHelper::store(NewsletterGroup::class,$request->all());
     }
     /**
-     * Display the specified newsletter_group. given the ID
+     * Display the specified content. given the ID
      *
      * @param  int  $id
      * @return \Illuminate\Http\JsonResponse
      */
     public function show($id)
     {
-        return RestHelper::show(NewsletterGroup::class,$id);
+        return RestHelper::show(Content::class,$id);
     }
     /**
-     * Show the form for editing the specified newsletter_group.
+     * Show the form for editing the specified content.
      *
-     * @param  \App\NewsletterGroup  $newsletter_group
+     * @param  \App\Content  $content
      * @return \Illuminate\Http\Response
      */
-    public function edit(NewsletterGroup $newsletter_group)
+    public function edit(Content $content)
     {
         //
     }
     /**
-     * Update the specified newsletter_group in databse.
+     * Update the specified content in databse.
      *
-     * @param NewsletterGroupRequest $request
+     * @param ContentRequest $request
      * @param  int $id
      * @return \Illuminate\Http\JsonResponse
      */
-    public function update(NewsletterGroupRequest $request, $id)
+    public function update(ContentRequest $request, $id)
     {
-        return RestHelper::update(NewsletterGroup::class,$request->all(),$id);
+        return RestHelper::update(Content::class,$request->all(),$id);
     }
     /**
-     * Remove the specified newsletter_group from database given his id.
+     * Remove the specified content from database given his id.
      *
      * @param  int  $id
      * @return \Illuminate\Http\JsonResponse
      */
     public function destroy($id)
     {
-        return RestHelper::destroy(NewsletterGroup::class,$id);
+        return RestHelper::destroy(Content::class,$id);
     }
 }
