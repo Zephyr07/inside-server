@@ -8,7 +8,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class NotificationMail extends Mailable
+class MailEventAdded extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -32,8 +32,8 @@ class NotificationMail extends Mailable
      */
     public function build()
     {
-        return $this->subject("test")->view('emails.notify_mail')
-            //->text('emails.notify_mail-text')
+        return $this->subject("[BVS Inside] Nouvel évènement")
+            ->view('emails.event_mail')
             ;
     }
 }

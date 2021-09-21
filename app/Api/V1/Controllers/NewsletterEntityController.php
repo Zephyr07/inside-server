@@ -3,8 +3,13 @@
 namespace App\Api\V1\Controllers;
 
 use App\Api\V1\Requests\NewsletterEntityRequest;
+use App\Direction;
+use App\Mail\MailEventAdded;
+use App\Mail\NewsletterAdded;
+use App\Newsletter;
 use App\NewsletterEntity;
 use App\Helpers\RestHelper;
+use Illuminate\Support\Facades\Mail;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Tymon\JWTAuth\JWTAuth;
 use App\Http\Controllers\Controller;
@@ -38,6 +43,22 @@ class NewsletterEntityController extends Controller
      */
     public function store(NewsletterEntityRequest $request)
     {
+        // recuperation de la newsletter
+        $newsletter= Newsletter::where("id","=",$request->newsletter_id)->first();
+        // recuperation des employés de ce groupe
+        $direction = Direction::with('employees')->where('entity_id',"=",$request->entity_id);
+        $direction = $direction->get();
+        foreach($direction as $d) {
+            foreach($d->employees as $e){
+                if($newsletter->type == 'event'){
+                    Mail::to($e->email)
+                        ->send(new MailEventAdded($newsletter));
+                } else {
+                    Mail::to($e->email)
+                        ->send(new NewsletterAdded($newsletter));
+                }
+            }
+        }
         return RestHelper::store(NewsletterEntity::class,$request->all());
     }
     /**

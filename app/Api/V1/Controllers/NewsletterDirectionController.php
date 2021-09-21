@@ -3,8 +3,13 @@
 namespace App\Api\V1\Controllers;
 
 use App\Api\V1\Requests\NewsletterDirectionRequest;
+use App\Employee;
+use App\Mail\MailEventAdded;
+use App\Mail\NewsletterAdded;
+use App\Newsletter;
 use App\NewsletterDirection;
 use App\Helpers\RestHelper;
+use Illuminate\Support\Facades\Mail;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Tymon\JWTAuth\JWTAuth;
 use App\Http\Controllers\Controller;
@@ -38,6 +43,20 @@ class NewsletterDirectionController extends Controller
      */
     public function store(NewsletterDirectionRequest $request)
     {
+        // recuperation de la newsletter
+        $newsletter= Newsletter::where("id","=",$request->newsletter_id)->first();
+        // recuperation des employés de ce groupe
+        $employees = Employee::where('direction_id',"=",$request->direction_id);
+        $employees = $employees->get();
+        foreach($employees as $e) {
+            if($newsletter->type == 'event'){
+                Mail::to($e->email)
+                    ->send(new MailEventAdded($newsletter));
+            } else {
+                Mail::to($e->email)
+                    ->send(new NewsletterAdded($newsletter));
+            }
+        }
         return RestHelper::store(NewsletterDirection::class,$request->all());
     }
     /**

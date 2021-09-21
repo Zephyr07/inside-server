@@ -3,19 +3,14 @@
 namespace App\Api\V1\Controllers;
 
 use App\Api\V1\Requests\NewsletterGroupRequest;
-use App\Group;
-use App\Mail\NotificationMail;
+use App\Mail\MailEventAdded;
+use App\Mail\NewsletterAdded;
 use App\Member;
 use App\Newsletter;
 use App\NewsletterGroup;
 use App\Helpers\RestHelper;
 use Illuminate\Support\Facades\Mail;
-use Symfony\Component\HttpKernel\Exception\HttpException;
-use Tymon\JWTAuth\JWTAuth;
 use App\Http\Controllers\Controller;
-use App\Api\V1\Requests\LoginRequest;
-use Tymon\JWTAuth\Exceptions\JWTException;
-use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Auth;
 
 class NewsletterGroupController extends Controller
@@ -45,10 +40,18 @@ class NewsletterGroupController extends Controller
     {
         // recuperation de la newsletter
         $newsletter= Newsletter::where("id","=",$request->newsletter_id)->first();
-        $group= Group::where("id","=",$request->group_id);
-        // recuperation des employé de ce groupe
+        // recuperation des employés de ce groupe
         $employees = Member::with('employee')->where('group_id',"=",$request->group_id);
-        Mail::to('enanda52@gmail.com')->send(new NotificationMail($newsletter));
+        $employees = $employees->get();
+        foreach($employees as $e) {
+            if($newsletter->type == 'event'){
+                Mail::to($e->employee->email)
+                    ->send(new MailEventAdded($newsletter));
+            } else {
+                Mail::to($e->employee->email)
+                    ->send(new NewsletterAdded($newsletter));
+            }
+        }
         return RestHelper::store(NewsletterGroup::class,$request->all());
     }
     /**
