@@ -14,7 +14,7 @@ class EmployeesTableSeeder extends Seeder
         $path =base_path("database/seeds/json/employees.json");
         $items = json_decode(file_get_contents($path),true);
         foreach ($items as $item){
-            $d= \App\Direction::where('name','=',$item['direction'])->first();
+            $d= \App\Direction::where('acronym','=',$item['direction'])->first();
             $u= \App\User::where('username','=',$item['user'])->first();
             $e= \App\Employee::where('first_name','=',$item['sup'])->first();
             if($d && $u){

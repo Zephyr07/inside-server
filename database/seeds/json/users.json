@@ -1,72 +1,642 @@
 [
 	{
-		"username":"bvsarr01",
-		"password":"password",
-		"roles" : [
-			"manager.bvs"
-		]
+		"username": "Hotline",
+		"password": "password",
+		"roles": ["employee.bvs"]
 	},
 	{
-		"username":"bvsoum01",
-		"password":"password",
-		"roles" : [
-			"manager.bvs"
-		]
+		"username": "bvdipo01",
+		"password": "password",
+		"roles": ["employee.bvs"]
 	},
 	{
-		"username":"bvkoyo01",
-		"password":"password",
-		"roles" : [
-			"manager.bvs"
-		]
+		"username": "bvdhiy01",
+		"password": "password",
+		"roles": ["employee.bvs"]
 	},
 	{
-		"username":"bvnand01",
-		"password":"T@rija690",
-		"roles" : [
-			"super.administrator"
-		]
+		"username": "bvntep01",
+		"password": "password",
+		"roles": ["employee.bvs"]
 	},
 	{
-		"username":"bvnino01",
-		"password":"password",
-		"roles" : [
-			"employee.bvs"
-		]
+		"username": "bvmato02",
+		"password": "password",
+		"roles": ["employee.bvs"]
 	},
 	{
-		"username":"bvdjo01",
-		"password":"password",
-		"roles" : [
-			"employee.bvs"
-		]
+		"username": "bvtaho01",
+		"password": "password",
+		"roles": ["employee.bvs"]
 	},
 	{
-		"username":"bvkemb01",
-		"password":"password",
-		"roles" : [
-			"employee.bvs"
-		]
+		"username": "bvngo03",
+		"password": "password",
+		"roles": ["employee.bvs"]
 	},
 	{
-		"username":"bvjuis01",
-		"password":"password",
-		"roles" : [
-			"employee.bvs"
-		]
+		"username": "bvjuis01",
+		"password": "password",
+		"roles": ["employee.bvs"]
 	},
 	{
-		"username":"bvmben01",
-		"password":"password",
-		"roles" : [
-			"employee.bvs"
-		]
+		"username": "bvnino01",
+		"password": "password",
+		"roles": ["employee.bvs"]
 	},
 	{
-		"username":"bvtema01",
-		"password":"password",
-		"roles" : [
-			"employee.bvs"
-		]
+		"username": "bvwont01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtcho02",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvngan01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvsaha01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvmoue01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvakoh01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvkuik01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvthir01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtamu01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvboua01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvmako03",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvboub01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvmalo02",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvneka01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvkoyo01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvngo01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvngo02",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvngue02",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvbipo01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvbohb01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtayo01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvchou01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvboto01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvmouk01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvngue01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvnand01",
+		"password": "password",
+		"roles": ["employee.bvs","super.administrator"]
+	},
+	{
+		"username": "bvbilo01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvfoko01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvmonn01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvmben01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvzogo01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvsaya01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvbina01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtcho01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvngol01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvkott01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvsarr01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvadza01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvegbe01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvdjou01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvmilo01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvkuie01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtiwa01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvnous01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvyoum01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bviboc01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvbian01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvboue01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvbiss01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvmbia01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvngas01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvnant01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvbamo01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvdong01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvntsa02",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvbiki01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtock01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvzain01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvmai01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvnjik01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvnand02",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvmech01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvetou01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvbone01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvndja01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvngue03",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvntam01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvngat01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvgrel01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvenda01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvnkan01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvkamg03",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvondo01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvnkod01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvkoua02",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvbile01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvkoum01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvchou02",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvbike01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvdiko01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtala01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvbika01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvbayi01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvhiom01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvdjak01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvayan01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvnzeu01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtcha02",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvmadz01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvetam01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvasse01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvnlen01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvekam01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvndoo01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvnono01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtchu01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvadou01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtcha01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvnjoh01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtueg01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvkamg01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtene01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvndou01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvsoum01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvgweh01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvdjio01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvmeko01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvngou01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvngou02",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvndje01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvenow01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvndjo02",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvguid01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvkemb01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvtabe01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvkoyo02",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvkoa01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvepee01",
+		"password": "password",
+		"roles": ["employee.bvs"]
+	},
+	{
+		"username": "bvntou01",
+		"password": "password",
+		"roles": ["employee.bvs"]
 	}
 ]
