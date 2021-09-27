@@ -1,5 +1,10 @@
 [
 	{
+		"acronym": "BVS",
+		"name": "BVS",
+		"entity": "BVS"
+	},
+	{
 		"acronym": "BDCDAF",
 		"name": "Direction Administrative et Financière BDC",
 		"entity": "BVS Distribution Cameroun"

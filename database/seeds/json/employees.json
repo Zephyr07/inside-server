@@ -5,21 +5,23 @@
     "title": "CEO",
     "email": "gsarra@bvssas.com",
     "last_name": "Guillaume",
-    "sup": "",
-    "ip_phone ": 10000,
+    "ip_phone": 10000,
     "phone": 699003985,
+    "birthday": "2020-04-29",
     "user": "bvsarr01",
     "first_name": "SARRA"
   },
   {
     "location": "Douala",
     "direction": "BDCDG",
-    "title": "Directeur Générél Zone 1 (Cameroun - Tchad - RCA)",
+    "title": "Directeur Général Zone 1 (Cameroun - Tchad - RCA)",
     "email": "ssoumahoro@bvssas.com",
     "last_name": "Stéphane K.",
     "sup": "SARRA",
     "ip_phone": 20000,
     "phone": 696002222,
+    "birthday": "2020-05-06",
+    "image": "SOUMAHORO.jpg",
     "user": "bvsoum01",
     "first_name": "SOUMAHORO"
   },
@@ -32,7 +34,9 @@
     "sup": "SOUMAHORO",
     "ip_phone": 12000,
     "phone": 699646011,
+    "birthday": "2020-05-09",
     "user": "bvdjak01",
+    "image": "DJAKOU.jpg",
     "first_name": "DJAKOU MOUOFO"
   },
   {
@@ -44,6 +48,8 @@
     "sup": "SOUMAHORO",
     "ip_phone": 21000,
     "phone": 699949083,
+    "image": "KOYOU.jpg",
+    "birthday": "2020-08-25",
     "user": "bvkoyo01",
     "first_name": "KOYOU YEUMO"
   },
@@ -62,12 +68,14 @@
   {
     "location": "Douala",
     "direction": "BDCDAF",
-    "title": "Chef deDépartement Comptabilité et Fiscalité",
+    "title": "Chef de Département Comptabilité et Fiscalité",
     "email": "hdjoum@bvssas.com",
     "last_name": "Hermand",
     "sup": "KOYOU YEUMO",
     "ip_phone": 21100,
+    "birthday": "2020-01-02",
     "phone": 656578300,
+    "image": "DJOUM.jpg",
     "user": "bvdjou01",
     "first_name": "DJOUM GUETCHUENG"
   },
@@ -80,6 +88,8 @@
     "sup": "DJOUM GUETCHUENG",
     "ip_phone": 21102,
     "phone": 699812611,
+    "image": "JUISSOP.jpg",
+    "birthday": "2020-08-22",
     "user": "bvjuis01",
     "first_name": "JUISSOP"
   },
@@ -92,6 +102,8 @@
     "sup": "DJOUM GUETCHUENG",
     "ip_phone": 21105,
     "phone": 699812598,
+    "birthday": "2020-06-22",
+    "image": "MBEN.jpg",
     "user": "bvmben01",
     "first_name": "MBEN"
   },
@@ -104,6 +116,8 @@
     "sup": "DJOUM GUETCHUENG",
     "ip_phone": 21103,
     "phone": 656564188,
+    "birthday": "2020-07-31",
+    "image": "EPEE.jpg",
     "user": "bvepee01",
     "first_name": "EPEE MANGA"
   },
@@ -116,6 +130,8 @@
     "sup": "DJOUM GUETCHUENG",
     "ip_phone": 21101,
     "phone": 694000487,
+    "birthday": "2020-04-01",
+    "image": "ENDALE.jpg",
     "user": "bvenda01",
     "first_name": "ENDALE"
   },
@@ -128,7 +144,9 @@
     "sup": "DJOUM GUETCHUENG",
     "ip_phone": 21106,
     "phone": 656011336,
+    "image": "NGO.jpg",
     "user": "bvngo02",
+    "birthday": "2020-08-14",
     "first_name": "NGO BIHENG"
   },
   {
@@ -139,7 +157,9 @@
     "last_name": "Jeannine",
     "sup": "DJOUM GUETCHUENG",
     "phone": 656178052,
+    "birthday": "2020-06-14",
     "user": "bvmbia01",
+    "image": "MBIAFU.jpg",
     "first_name": "MBIAFU"
   },
   {
@@ -150,6 +170,8 @@
     "last_name": "Sandrine",
     "sup": "DJOUM GUETCHUENG",
     "phone": 658783666,
+    "birthday": "2020-06-28",
+    "image": "TCHUIDJANG.jpg",
     "user": "bvtchu01",
     "first_name": "TCHUINDJANG"
   },
@@ -161,6 +183,8 @@
     "last_name": "Arlie Pelagie",
     "sup": "DJOUM GUETCHUENG",
     "phone": 690707436,
+    "birthday": "2020-10-31",
+    "image": "BOUCHE.jpg",
     "user": "bvnino01",
     "first_name": "BOUCHE"
   },
@@ -173,6 +197,8 @@
     "sup": "DJOUM GUETCHUENG",
     "ip_phone": 13111,
     "phone": 690433291,
+    "image": "MILONG.jpg",
+    "birthday": "2020-07-04",
     "user": "bvmilo01",
     "first_name": "MILONG"
   },
@@ -185,6 +211,8 @@
     "sup": "DJOUM GUETCHUENG",
     "ip_phone": 13113,
     "phone": 656548996,
+    "birthday": "2020-04-23",
+    "image": "DONGMO.jpg",
     "user": "bvdong01",
     "first_name": "PANYE"
   },
@@ -197,6 +225,8 @@
     "sup": "KOYOU YEUMO",
     "ip_phone": 21400,
     "phone": 690613323,
+    "birthday": "2020-05-17",
+    "image": "NANDA.jpg",
     "user": "bvnand01",
     "first_name": "NANDA"
   },
@@ -208,19 +238,23 @@
     "last_name": "Wilfried",
     "sup": "NANDA",
     "ip_phone": 21403,
+    "birthday": "2020-01-16",
     "phone": 658027569,
     "user": "bvkemb01",
+    "image": "KEMBOU.jpg",
     "first_name": "KEMBOU"
   },
   {
     "location": "Douala",
     "direction": "BDCDAF",
-    "title": "Responsable Administration du Personnel et de la Paie",
+    "title": "Responsable de l'Administration du Personnel et de la Paie",
     "email": "dmechouako@bvssas.com",
     "last_name": "Lina Manuella",
     "sup": "KOYOU YEUMO",
     "ip_phone": 21310,
+    "birthday": "2020-12-23",
     "phone": 690463724,
+    "image": "MECHOUAKO.jpg",
     "user": "bvmech01",
     "first_name": "DEENY"
   },
@@ -233,6 +267,8 @@
     "sup": "KOYOU YEUMO",
     "ip_phone": 21300,
     "phone": 691605088,
+    "image": "IBOCK.jpg",
+    "birthday": "2020-05-04",
     "user": "bviboc01",
     "first_name": "IBOCK II"
   },
@@ -244,8 +280,10 @@
     "last_name": "Suzelle Annick",
     "sup": "IBOCK II",
     "ip_phone": 21302,
+    "birthday": "2020-04-17",
     "phone": 690709426,
     "user": "bvmeko01",
+    "image": "MEKOUA.jpg",
     "first_name": "MEKOU EYA"
   },
   {
@@ -257,6 +295,8 @@
     "sup": "SOUMAHORO",
     "ip_phone": 22100,
     "phone": 696948595,
+    "birthday": "2020-06-04",
+    "image": "KAMGA.jpg",
     "user": "bvkamg01",
     "first_name": "KAMGA CHATUE"
   },
@@ -280,8 +320,24 @@
     "sup": "SOUMAHORO",
     "ip_phone": 23000,
     "phone": 696134472,
+    "birthday": "2020-03-27",
+    "image": "LANDRY.jpg",
     "user": "bvmai01",
     "first_name": "MAI DE MAY"
+  },
+  {
+    "location": "Douala",
+    "direction": "BPCDCM",
+    "title": "Chef de Marché BVS Brands",
+    "email": "payangma@bvssas.com",
+    "last_name": "Prada",
+    "sup": "MAI DE MAY",
+    "birthday": "2020-11-05",
+    "ip_phone": 23100,
+    "phone": 694424009,
+    "user": "bvayan01",
+    "image": "AYANGMA.jpg",
+    "first_name": "AYANGMA"
   },
   {
     "location": "Douala",
@@ -292,6 +348,8 @@
     "sup": "DJAKOU MOUOFO",
     "ip_phone": 12100,
     "phone": 698004790,
+    "birthday": "2020-05-13",
+    "image": "ETOUBE.jpg",
     "user": "bvetou01",
     "first_name": "ETOUBE EBONGUE"
   },
@@ -301,9 +359,11 @@
     "title": "Area Sales Manager LITTORAL/SUD-OUEST",
     "email": "gkotto@bvssas.com",
     "last_name": "Gérard",
+    "birthday": "2020-10-03",
     "sup": "MAI DE MAY",
     "ip_phone": 22200,
     "phone": 699051033,
+    "image": "KOTTO.jpg",
     "user": "bvkott01",
     "first_name": "KOTTO"
   },
@@ -316,18 +376,21 @@
     "sup": "DJAKOU MOUOFO",
     "ip_phone": 12300,
     "phone": 691750087,
+    "image": "EGBE.jpg",
     "user": "bvegbe01",
     "first_name": "JILL EGBE"
   },
   {
     "location": "Douala",
     "direction": "BPCDG",
-    "title": "Senior Manager des Moyens Généréux, Sécurité et Infrastructures",
+    "title": "Senior Manager des Moyens Généraux, Sécurité et Infrastructures",
     "email": "rtchakounte@bvssas.com",
     "last_name": "Raoul",
     "sup": "SOUMAHORO",
     "ip_phone": 20100,
     "phone": 690600922,
+    "birthday": "2020-07-30",
+    "image": "TCHAKOUNTE.jpg",
     "user": "bvtcha02",
     "first_name": "TCHAKOUNTE"
   },
@@ -340,7 +403,9 @@
     "sup": "TCHAKOUNTE",
     "ip_phone": 14200,
     "phone": 699807452,
+    "birthday": "2020-05-20",
     "user": "bvnjik01",
+    "image": "NJIKI.jpg",
     "first_name": "TAPKO"
   },
   {
@@ -350,9 +415,11 @@
     "email": "stenezeu@bvssas.com",
     "last_name": "Sonia",
     "sup": "TCHAKOUNTE",
+    "birthday": "2020-02-05",
     "ip_phone": 14100,
     "phone": 695449439,
     "user": "bvtene01",
+    "image": "TENEZEU.jpg",
     "first_name": "TENEZEU"
   },
   {
@@ -363,9 +430,25 @@
     "last_name": "Eric",
     "sup": "KOYOU YEUMO",
     "ip_phone": 11010,
+    "birthday": "2020-10-30",
     "phone": 699318837,
     "user": "bvfoko01",
+    "image": "FOKO.jpg",
     "first_name": "FOKO TALOM"
+  },
+  {
+    "location": "Douala",
+    "direction": "BPCDAF",
+    "title": "Administrateur Support Base de Données",
+    "email": "ftchomnou@bvssas.com",
+    "last_name": "Franky",
+    "sup": "FOKO TALOM",
+    "ip_phone": 11011,
+    "phone": 658323119,
+    "birthday": "2020-05-18",
+    "user": "bvtcho01",
+    "image": "TCHOMNOU.jpg",
+    "first_name": "TCHOMNOU"
   },
   {
     "location": "Adamaoua",
@@ -374,6 +457,7 @@
     "email": "jbouery@bvssas.com",
     "last_name": "Jean Jacques Georges",
     "sup": "THIROUX",
+    "birthday": "2020-11-01",
     "phone": 696060169,
     "user": "bvboue01",
     "first_name": "BOUERY NASSIF"
@@ -387,7 +471,20 @@
     "sup": "MAI DE MAY",
     "phone": 697617789,
     "user": "bvngol01",
+    "image": "NGOLE.jpg",
     "first_name": "NGOLE"
+  },
+  {
+    "location": "Yaoundé",
+    "direction": "BPCDCM",
+    "title": "Area Sales Supervisor(Centre, Sud, Est)",
+    "email": "rnzeugang@bvssas.com",
+    "last_name": "Rainier",
+    "sup": "NGOLE",
+    "phone": 694176683,
+    "user": "bvnzeu01",
+    "image": "NZEUGANG.jpg",
+    "first_name": "NZEUGANG"
   },
   {
     "location": "Douala",
@@ -409,7 +506,9 @@
     "sup": "TCHAKOUNTE",
     "ip_phone": 10430,
     "phone": 699901671,
+    "birthday": "2020-09-03",
     "user": "bvdipo01",
+    "image": "ETROUKANG.jpg",
     "first_name": "DIPOKO"
   },
   {
@@ -420,7 +519,9 @@
     "last_name": "Alain Pascal",
     "sup": "DJAKOU MOUOFO",
     "phone": 699831972,
+    "birthday": "2020-04-10",
     "user": "bvdhiy01",
+    "image": "DHIYAH.jpg",
     "first_name": "DHIYAB"
   },
   {
@@ -431,6 +532,8 @@
     "last_name": "Alvine",
     "sup": "NGOLE",
     "phone": 699806539,
+    "birthday": "2020-03-13",
+    "image": "NTEPDIE.jpg",
     "user": "bvntep01",
     "first_name": "NTEPDIE"
   },
@@ -441,7 +544,9 @@
     "email": "amatoun@bvssas.com",
     "last_name": "André",
     "sup": "MAI DE MAY",
+    "birthday": "2020-10-28",
     "phone": 699835749,
+    "image": "MATOUN.jpg",
     "user": "bvmato02",
     "first_name": "MATOUN"
   },
@@ -453,6 +558,8 @@
     "last_name": "Andrea",
     "sup": "KOTTO",
     "phone": 691797020,
+    "image": "TAHOUE.jpg",
+    "birthday": "2020-07-04",
     "user": "bvtaho01",
     "first_name": "TAHOUE"
   },
@@ -464,6 +571,8 @@
     "last_name": "Anne Marie",
     "sup": "KAMGA CHATUE",
     "phone": 699813008,
+    "birthday": "2020-07-14",
+    "image": "NYECK.jpg",
     "user": "bvngo03",
     "first_name": "NGO NYECK"
   },
@@ -475,7 +584,9 @@
     "last_name": "Armel Christian",
     "sup": "JILL EGBE",
     "phone": 699860080,
+    "birthday": "2020-05-01",
     "user": "bvwont01",
+    "image": "WONTOUOM.jpg",
     "first_name": "WONTOUOM POWO"
   },
   {
@@ -486,6 +597,8 @@
     "last_name": "Armelle",
     "sup": "KAMGA CHATUE",
     "phone": 697482504,
+    "birthday": "2020-03-17",
+    "image": "TCHOUANKAM.jpg",
     "user": "bvtcho02",
     "first_name": "TCHOUANKAM"
   },
@@ -495,9 +608,11 @@
     "title": "Superviseur Spiders Lions Yaoundé",
     "email": "angan@bvssas.com",
     "last_name": "Arnauld",
-    "sup": "AYANGMA",
+    "sup": "NZEUGANG",
     "phone": 699533122,
+    "birthday": "2020-08-22",
     "user": "bvngan01",
+    "image": "NGAN.jpg",
     "first_name": "NGAN"
   },
   {
@@ -509,7 +624,9 @@
     "sup": "DJAKOU MOUOFO",
     "ip_phone": 12101,
     "phone": 690540632,
+    "birthday": "2020-06-09",
     "user": "bvsaha01",
+    "image": "SAHA.jpg",
     "first_name": "SAHA TANGUE"
   },
   {
@@ -520,7 +637,9 @@
     "last_name": "Arthur",
     "sup": "TENEZEU",
     "phone": 690050567,
+    "birthday": "2020-03-25",
     "user": "bvmoue01",
+    "image": "MOUENDJI.jpg",
     "first_name": "MOUENDJI MOSSA"
   },
   {
@@ -533,6 +652,8 @@
     "ip_phone": 12001,
     "phone": 690703126,
     "user": "bvakoh01",
+    "birthday": "2020-02-28",
+    "image": "MESSE.jpg",
     "first_name": "MESSE"
   },
   {
@@ -545,6 +666,7 @@
     "ip_phone": 12103,
     "phone": 690050602,
     "user": "bvkuik01",
+    "image": "KUIKEU.jpg",
     "first_name": "KUIKEU"
   },
   {
@@ -553,10 +675,24 @@
     "title": "Superviseur Spiders Lions Yaoundé",
     "email": "atamungang@bvssas.com",
     "last_name": "Aziegheh",
-    "sup": "AYANGMA",
+    "sup": "NZEUGANG",
     "phone": 691406756,
+    "birthday": "2020-03-29",
     "user": "bvtamu01",
+    "image": "AZIEGHEH.jpg",
     "first_name": "TAMUNGANG MBUH"
+  },
+  {
+    "location": "Bafoussam",
+    "direction": "BDCDC",
+    "title": "Chef de Ventes Secteur Ouest/Nord Ouest",
+    "email": "mndjanzou@bvssas.com",
+    "last_name": "Majolie",
+    "birthday": "2020-03-03",
+    "sup": "KOTTO",
+    "phone": 656547380,
+    "user": "bvndja01",
+    "first_name": "NDJANZOU Epse WEMEGUELA"
   },
   {
     "location": "Bafoussam",
@@ -566,7 +702,9 @@
     "last_name": "Barthelemy",
     "sup": "NDJANZOU Epse WEMEGUELA",
     "phone": 691804014,
+    "birthday": "2020-03-20",
     "user": "bvboua01",
+    "image": "BOUABE.jpg",
     "first_name": "BOUABE"
   },
   {
@@ -577,15 +715,19 @@
     "last_name": "Bertrand",
     "sup": "AYANGMA",
     "phone": 699905419,
+    "birthday": "2020-04-02",
     "user": "bvmako03",
+    "image": "MAKOUNDY.jpg",
     "first_name": "MAKOUNDY"
   },
   {
     "location": "Douala",
     "direction": "BPCDG",
     "email": "boubakari@bvssas.com",
-    "sup": "SARRA",
+    "sup": "SOUMAHORO",
+    "birthday": "2020-11-01",
     "user": "bvboub01",
+    "image": "BOUBAKARI.jpg",
     "first_name": "BOUBAKARI"
   },
   {
@@ -596,6 +738,7 @@
     "sup": "DJAKOU MOUOFO",
     "phone": 690663195,
     "user": "bvmalo02",
+    "image": "MALABE.jpg",
     "first_name": "MALOBE"
   },
   {
@@ -606,8 +749,10 @@
     "last_name": "Calvin",
     "sup": "DJAKOU MOUOFO",
     "ip_phone": 12200,
+    "birthday": "2020-10-07",
     "phone": 699380807,
     "user": "bvneka01",
+    "image": "NEKAM.jpg",
     "first_name": "NEKAM TOWA"
   },
   {
@@ -618,7 +763,9 @@
     "last_name": "Carmel",
     "sup": "KOTTO",
     "phone": 699902625,
+    "birthday": "2020-07-10",
     "user": "bvngo01",
+    "image": "MBOCK.jpg",
     "first_name": "NGO MBOCK"
   },
   {
@@ -630,7 +777,9 @@
     "sup": "TCHAKOUNTE",
     "ip_phone": 20110,
     "phone": 699903481,
+    "birthday": "2020-08-03",
     "user": "bvngue02",
+    "image": "NGASSA.jpg",
     "first_name": "NGUETIO Epse NGASSA HAPPI"
   },
   {
@@ -642,7 +791,9 @@
     "sup": "TCHAKOUNTE",
     "ip_phone": 11202,
     "phone": 690408319,
+    "birthday": "2020-05-16",
     "user": "bvbipo01",
+    "image": "BIPOUN.jpg",
     "first_name": "BIPOUN NDAMB"
   },
   {
@@ -654,6 +805,7 @@
     "sup": "KOTTO",
     "phone": 691101281,
     "user": "bvbohb01",
+    "image": "BOHBEU.jpg",
     "first_name": "BOHBEU BANGJA"
   },
   {
@@ -663,8 +815,10 @@
     "email": "ctayou@bvssas.com",
     "last_name": "Cynthia",
     "sup": "KOTTO",
+    "birthday": "2020-11-23",
     "phone": 656008521,
     "user": "bvtayo01",
+    "image": "TAYOU.jpg",
     "first_name": "TAYOU"
   },
   {
@@ -676,19 +830,10 @@
     "sup": "MAI DE MAY",
     "ip_phone": 23310,
     "phone": 691105501,
+    "birthday": "2020-01-03",
     "user": "bvchou01",
+    "image": "CHOUPO.jpg",
     "first_name": "CHOUPO"
-  },
-  {
-    "location": "Bafoussam",
-    "direction": "BDCDG",
-    "title": "Magasinier",
-    "email": "dbotoh@bvssas.com",
-    "last_name": "Demyrel",
-    "sup": "BAMOBE",
-    "phone": 696764282,
-    "user": "bvboto01",
-    "first_name": "BOTOH"
   },
   {
     "location": "Douala",
@@ -698,7 +843,9 @@
     "last_name": "Diana",
     "sup": "KAMGA CHATUE",
     "phone": 699813107,
+    "birthday": "2020-03-12",
     "user": "bvmouk01",
+    "image": "MOUKALLA.jpg",
     "first_name": "MOUKALLA MBAPPE"
   },
   {
@@ -707,9 +854,11 @@
     "title": "Area Sales Assistant",
     "email": "dnguewo@bvssas.com",
     "last_name": "Diane",
+    "birthday": "2020-03-31",
     "sup": "NGOLE",
     "phone": 691528302,
     "user": "bvngue01",
+    "image": "NGUEWO.jpg",
     "first_name": "NGUEWO"
   },
   {
@@ -719,8 +868,11 @@
     "email": "ebilong@bvssas.com",
     "last_name": "Elvis Gaëtan",
     "sup": "JILL EGBE",
+    "birthday": "2020-03-29",
     "phone": 699861538,
+    "birthday": "2020-05-14",
     "user": "bvbilo01",
+    "image": "BILONG.jpg",
     "first_name": "BILONG BI BIYIHA"
   },
   {
@@ -729,10 +881,12 @@
     "title": "Vendeur Responsable CHR",
     "email": "emonny@bvssas.com",
     "last_name": "Ernest",
+    "birthday": "2020-11-18",
     "sup": "KOTTO",
     "phone": 690402518,
     "user": "bvmonn01",
-    "first_name": "MONNY DAIDO"
+    "image": "MONNY.jpg",
+    "first_name": "ESSAKA MONNY DAIDO"
   },
   {
     "location": "Douala",
@@ -743,19 +897,10 @@
     "sup": "KOYOU YEUMO",
     "ip_phone": 22001,
     "phone": 699905542,
+    "birthday": "2020-02-10",
     "user": "bvzogo01",
+    "image": "ZOGO.jpg",
     "first_name": "ZOGO"
-  },
-  {
-    "location": "Yaoundé",
-    "direction": "BDCDC",
-    "title": "Vendeur",
-    "email": "fsaya@bvssas.com",
-    "last_name": "Francis",
-    "sup": "NZEUGANG",
-    "phone": 696989470,
-    "user": "bvsaya01",
-    "first_name": "SAYA"
   },
   {
     "location": "Douala",
@@ -766,20 +911,10 @@
     "sup": "AYANGMA",
     "ip_phone": 32102,
     "phone": 699187074,
+    "birthday": "2020-04-04",
     "user": "bvbina01",
+    "image": "BINAM.jpg",
     "first_name": "BINAM"
-  },
-  {
-    "location": "Douala",
-    "direction": "BPCDAF",
-    "title": "Administrateur Support Base de Données",
-    "email": "ftchomnou@bvssas.com",
-    "last_name": "Franky",
-    "sup": "FOKO",
-    "ip_phone": 11011,
-    "phone": 658323119,
-    "user": "bvtcho01",
-    "first_name": "TCHOMNOU"
   },
   {
     "location": "Douala",
@@ -790,6 +925,8 @@
     "sup": "KAMGA CHATUE",
     "phone": 657298499,
     "user": "bvadza01",
+    "birthday": "2020-07-07",
+    "image": "ADZABA.jpg",
     "first_name": "ADZABA MVOLO"
   },
   {
@@ -800,8 +937,10 @@
     "last_name": "Hilarion",
     "sup": "DJAKOU MOUOFO",
     "ip_phone": 12401,
+    "birthday": "2020-01-21",
     "phone": 698004616,
     "user": "bvkuie01",
+    "image": "KUIETCHE.jpg",
     "first_name": "KUIETCHE"
   },
   {
@@ -813,6 +952,8 @@
     "sup": "KOTTO",
     "phone": 656459774,
     "user": "bvtiwa01",
+    "birthday": "2020-08-15",
+    "image": "TIWA.jpg",
     "first_name": "TIWA"
   },
   {
@@ -823,7 +964,9 @@
     "last_name": "Isaac",
     "sup": "TAPKO",
     "phone": 699844436,
+    "birthday": "2020-04-16",
     "user": "bvnous01",
+    "image": "NOUSSI.jpg",
     "first_name": "NOUSSI"
   },
   {
@@ -834,7 +977,9 @@
     "last_name": "Ivan Steve",
     "sup": "AYANGMA",
     "phone": 691812517,
+    "birthday": "2020-01-27",
     "user": "bvyoum01",
+    "image": "YOUMBI.jpg",
     "first_name": "YOUMBI FOTSO"
   },
   {
@@ -845,7 +990,9 @@
     "last_name": "Jean Clément",
     "sup": "AYANGMA",
     "phone": 699907318,
+    "birthday": "2020-04-21",
     "user": "bvbian01",
+    "image": "BIANG.jpg",
     "first_name": "BIANG"
   },
   {
@@ -858,6 +1005,7 @@
     "ip_phone": 14002,
     "phone": 694263355,
     "user": "bvbiss01",
+    "image": "BISSA.jpg",
     "first_name": "BISSA"
   },
   {
@@ -869,7 +1017,9 @@
     "sup": "SOUMAHORO",
     "ip_phone": 20300,
     "phone": 699830683,
+    "birthday": "2020-05-21",
     "user": "bvngas01",
+    "image": "NGASSAM.jpg",
     "first_name": "NGASSAM"
   },
   {
@@ -881,7 +1031,9 @@
     "sup": "DJAKOU MOUOFO",
     "ip_phone": 11204,
     "phone": 693299022,
+    "birthday": "2020-03-04",
     "user": "bvnant01",
+    "image": "NANTCHOUANG.jpg",
     "first_name": "NANTCHOUANG TSANANG"
   },
   {
@@ -892,9 +1044,23 @@
     "last_name": "Jude Limba",
     "sup": "TCHAKOUNTE",
     "ip_phone": 20111,
+    "birthday": "2020-04-18",
     "phone": 694144594,
     "user": "bvbamo01",
+    "image": "BAMOBE.jpg",
     "first_name": "BAMOBE"
+  },
+  {
+    "location": "Bafoussam",
+    "direction": "BDCDG",
+    "title": "Magasinier",
+    "email": "dbotoh@bvssas.com",
+    "last_name": "Demyrel",
+    "sup": "BAMOBE",
+    "phone": 696764282,
+    "user": "bvboto01",
+    "image": "DEMYREL.jpg",
+    "first_name": "BOTOH"
   },
   {
     "location": "Yaoundé",
@@ -903,8 +1069,11 @@
     "email": "jntsama@bvssas.com",
     "last_name": "Jules Boris",
     "sup": "NGOLE",
+    "birthday": "2020-03-05",
     "phone": 691107055,
+    "birthday": "2020-07-29",
     "user": "bvntsa02",
+    "image": "NTSAMA.jpg",
     "first_name": "NTSAMA"
   },
   {
@@ -916,7 +1085,9 @@
     "sup": "THIROUX",
     "ip_phone": 32101,
     "phone": 691810894,
+    "birthday": "2020-04-01",
     "user": "bvbiki01",
+    "image": "NKACHE.jpg",
     "first_name": "BIKIM"
   },
   {
@@ -927,8 +1098,10 @@
     "last_name": "Kevin",
     "sup": "DJAKOU MOUOFO",
     "ip_phone": 33002,
+    "birthday": "2020-12-10",
     "phone": 699907662,
     "user": "bvtock01",
+    "image": "TOCKO.jpg",
     "first_name": "TOCKO"
   },
   {
@@ -939,7 +1112,9 @@
     "last_name": "Laeticia",
     "sup": "",
     "phone": 691302211,
+    "birthday": "2020-05-14",
     "user": "bvzain01",
+    "image": "ZAINVE.jpg",
     "first_name": "ZAINVE epse NKORO"
   },
   {
@@ -951,7 +1126,9 @@
     "sup": "TCHAKOUNTE",
     "ip_phone": 11201,
     "phone": 691700835,
+    "birthday": "2020-06-29",
     "user": "bvnand02",
+    "image": "NANDJO.jpg",
     "first_name": "NANDJO"
   },
   {
@@ -962,19 +1139,10 @@
     "last_name": "Lufong Cyrille",
     "sup": "KOTTO",
     "phone": 691400977,
+    "birthday": "2020-04-30",
     "user": "bvbone01",
+    "image": "BONEKEH.jpg",
     "first_name": "BONEKEH"
-  },
-  {
-    "location": "Bafoussam",
-    "direction": "BDCDC",
-    "title": "Chef de Ventes Secteur Ouest/Nord Ouest",
-    "email": "mndjanzou@bvssas.com",
-    "last_name": "Majolie Josiane",
-    "sup": "KOTTO",
-    "phone": 656547380,
-    "user": "bvndja01",
-    "first_name": "NDJANZOU Epse WEMEGUELA"
   },
   {
     "location": "Douala",
@@ -985,6 +1153,8 @@
     "sup": "DJAKOU MOUOFO",
     "phone": 699907018,
     "user": "bvngue03",
+    "birthday": "2020-07-05",
+    "image": "NGUEND.jpg",
     "first_name": "NGUEND"
   },
   {
@@ -997,6 +1167,8 @@
     "ip_phone": 32103,
     "phone": 698835481,
     "user": "bvntam01",
+    "birthday": "2020-08-28",
+    "image": "NTAMACK.jpg",
     "first_name": "NTAMACK"
   },
   {
@@ -1009,6 +1181,7 @@
     "ip_phone": 23001,
     "phone": 699812425,
     "user": "bvngat01",
+    "image": "NGATSING.jpg",
     "first_name": "NGATSING"
   },
   {
@@ -1019,7 +1192,9 @@
     "last_name": "Marlène Ines",
     "sup": "THIROUX",
     "phone": 695112450,
+    "birthday": "2020-08-04",
     "user": "bvgrel01",
+    "image": "GRELOMBE.jpg",
     "first_name": "GRELOMBE"
   },
   {
@@ -1031,17 +1206,21 @@
     "sup": "AYANGMA",
     "phone": 698004141,
     "user": "bvnkan01",
+    "birthday": "2020-06-21",
+    "image": "NKANGHA.jpg",
     "first_name": "NKANGHA"
   },
   {
     "location": "Douala",
     "direction": "BPCDU",
-    "title": "Services Généréux",
+    "title": "Services Généraux",
     "email": "mkamga@bvssas.com",
     "last_name": "Miler",
     "sup": "DJAKOU MOUOFO",
     "phone": 658683970,
+    "birthday": "2020-03-14",
     "user": "bvkamg03",
+    "image": "KAMGA AURELIEN.jpg",
     "first_name": "KAMGA"
   },
   {
@@ -1053,19 +1232,23 @@
     "sup": "MAI DE MAY",
     "ip_phone": 23002,
     "phone": 691864861,
+    "birthday": "2020-04-04",
     "user": "bvondo01",
+    "image": "NDJANA.jpg",
     "first_name": "NDJANA ONDOUA"
   },
   {
     "location": "Douala",
     "direction": "BPCDAF",
-    "title": "Chargée de L'Administration du Personnel et de la Paie",
+    "title": "Chargée de l'Administration du Personnel et de la Paie",
     "email": "mnkodo@bvssas.com",
     "last_name": "Muriel",
     "sup": "IBOCK II",
     "ip_phone": 13202,
+    "birthday": "2020-10-06",
     "phone": 699868074,
     "user": "bvnkod01",
+    "image": "NKODO.jpg",
     "first_name": "NKODO"
   },
   {
@@ -1075,9 +1258,11 @@
     "email": "mkouakep@bvssas.com",
     "last_name": "Myriam",
     "sup": "JILL EGBE",
+    "birthday": "2020-02-11",
     "ip_phone": 12302,
     "phone": 690704860,
     "user": "bvkoua02",
+    "image": "KOUAKEP.jpg",
     "first_name": "KOUAKEP TCHANA"
   },
   {
@@ -1089,7 +1274,9 @@
     "sup": "JILL EGBE",
     "ip_phone": 12302,
     "phone": 698915514,
+    "birthday": "2020-06-28",
     "user": "bvbile01",
+    "image": "BILEGUE.jpg",
     "first_name": "BILEGUE"
   },
   {
@@ -1100,7 +1287,9 @@
     "last_name": "Natacha",
     "sup": "NGOLE",
     "phone": 691138343,
+    "birthday": "2020-08-01",
     "user": "bvkoum01",
+    "image": "KOUMAN.jpg",
     "first_name": "KOUMAN"
   },
   {
@@ -1111,7 +1300,9 @@
     "last_name": "Odilon",
     "sup": "NGOLE",
     "phone": 691134522,
+    "birthday": "2020-05-17",
     "user": "bvchou02",
+    "image": "FOKOM.jpg",
     "first_name": "CHOUDJA"
   },
   {
@@ -1122,7 +1313,9 @@
     "last_name": "Olive",
     "sup": "IBOCK II",
     "ip_phone": 22102,
+    "birthday": "2020-05-23",
     "user": "bvbike01",
+    "image": "BIKET.jpg",
     "first_name": "NGO BIKET"
   },
   {
@@ -1132,7 +1325,9 @@
     "email": "hdikous@bvssas.com",
     "last_name": "Pablo",
     "sup": "KAMGA CHATUE",
+    "birthday": "2020-04-01",
     "user": "bvdiko01",
+    "image": "DIKOUS.jpg",
     "first_name": "DIKOUS"
   },
   {
@@ -1143,7 +1338,9 @@
     "last_name": "Pamela",
     "sup": "MAI DE MAY",
     "phone": 657373387,
+    "birthday": "2020-10-16",
     "user": "bvtala01",
+    "image": "MANCHIE.jpg",
     "first_name": "TALA"
   },
   {
@@ -1155,7 +1352,9 @@
     "sup": "DJAKOU MOUOFO",
     "ip_phone": 12301,
     "phone": 699615052,
+    "birthday": "2020-04-01",
     "user": "bvbika01",
+    "image": "BIKAI.jpg",
     "first_name": "BIKAI"
   },
   {
@@ -1167,31 +1366,23 @@
     "sup": "DJAKOU MOUOFO",
     "ip_phone": 14201,
     "phone": 694801623,
+    "birthday": "2020-05-01",
     "user": "bvhiom01",
+    "image": "HIOMOG.jpg",
     "first_name": "HIOMOG"
   },
   {
-    "location": "Douala",
-    "direction": "BPCDCM",
-    "title": "Chef de Marché BVS Brands",
-    "email": "payangma@bvssas.com",
-    "last_name": "Prada",
-    "sup": "MAI DE MAY",
-    "ip_phone": 23100,
-    "phone": 694424009,
-    "user": "bvayan01",
-    "first_name": "AYANGMA"
-  },
-  {
     "location": "Yaoundé",
-    "direction": "BPCDCM",
-    "title": "Area Sales Supervisor(Centre, Sud, Est)",
-    "email": "rnzeugang@bvssas.com",
-    "last_name": "Rainier",
-    "sup": "NGOLE",
-    "phone": 694176683,
-    "user": "bvnzeu01",
-    "first_name": "NZEUGANG"
+    "direction": "BDCDC",
+    "title": "Vendeur",
+    "email": "fsaya@bvssas.com",
+    "last_name": "Francis",
+    "sup": "NZEUGANG",
+    "phone": 696989470,
+    "user": "bvsaya01",
+    "birthday": "2020-09-02",
+    "image": "MBENJO.jpg",
+    "first_name": "SAYA"
   },
   {
     "location": "Douala",
@@ -1201,7 +1392,9 @@
     "last_name": "Reine",
     "sup": "KOTTO",
     "phone": 656478401,
+    "birthday": "2020-01-04",
     "user": "bvmadz01",
+    "image": "MADZO.jpg",
     "first_name": "MADZO"
   },
   {
@@ -1211,8 +1404,10 @@
     "email": "retame@bvssas.com",
     "last_name": "Richard",
     "sup": "DJAKOU MOUOFO",
+    "birthday": "2020-11-01",
     "phone": 699736717,
     "user": "bvetam01",
+    "image": "DIA.jpg",
     "first_name": "ETAME"
   },
   {
@@ -1224,7 +1419,9 @@
     "sup": "DJAKOU MOUOFO",
     "ip_phone": 12204,
     "phone": 698004006,
+    "birthday": "2020-06-22",
     "user": "bvasse01",
+    "image": "ASSENG.jpg",
     "first_name": "ASSENG"
   },
   {
@@ -1235,7 +1432,9 @@
     "last_name": "Roger Bienvenu",
     "sup": "TENEZEU",
     "phone": 690050315,
+    "birthday": "2020-04-28",
     "user": "bvnlen01",
+    "image": "NLEND.jpg",
     "first_name": "NLEND"
   },
   {
@@ -1258,8 +1457,10 @@
     "last_name": "Samuel",
     "sup": "DJAKOU MOUOFO",
     "ip_phone": 33003,
+    "birthday": "2020-03-09",
     "phone": 691145709,
     "user": "bvndoo01",
+    "image": "NDOOH.jpg",
     "first_name": "NDOOH"
   },
   {
@@ -1270,18 +1471,22 @@
     "last_name": "Sandrine",
     "sup": "KOTTO",
     "phone": 656462499,
+    "birthday": "2020-10-12",
     "user": "bvnono01",
+    "image": "NONO.jpg",
     "first_name": "NONO"
   },
   {
     "location": "Douala",
     "direction": "BPCDG",
-    "title": "Assistante",
+    "title": "Chef de Bureau RH Yaoundé",
     "email": "sadoube@bvssas.com",
     "last_name": "Sarah",
     "sup": "IBOCK II",
     "phone": 691704297,
+    "birthday": "2020-07-06",
     "user": "bvadou01",
+    "image": "ADOUBE.jpg",
     "first_name": "ADOUBE"
   },
   {
@@ -1292,7 +1497,9 @@
     "last_name": "Serge",
     "sup": "DJAKOU MOUOFO",
     "phone": 699615187,
+    "birthday": "2020-05-12",
     "user": "bvtcha01",
+    "image": "TCHAMI.jpg",
     "first_name": "TCHAMI"
   },
   {
@@ -1304,6 +1511,8 @@
     "sup": "KAMGA CHATUE",
     "phone": 690402483,
     "user": "bvnjoh01",
+    "birthday": "2020-09-25",
+    "image": "NJOH.jpg",
     "first_name": "NJOH TEME"
   },
   {
@@ -1315,18 +1524,22 @@
     "sup": "KAMGA CHATUE",
     "phone": 698004028,
     "user": "bvtueg01",
+    "birthday": "2020-08-16",
+    "image": "TUEGNO.jpg",
     "first_name": "TUEGNO"
   },
   {
     "location": "Douala",
     "direction": "BPCDG",
-    "title": "Assistante du Directeur Générél",
+    "title": "Assistante du Directeur Général",
     "email": "sndoutou@bvssas.com",
     "last_name": "Sorelle",
     "sup": "SOUMAHORO",
     "ip_phone": 10001,
     "phone": 690405187,
     "user": "bvndou01",
+    "birthday": "2020-08-12",
+    "image": "NDOUTOU.jpg",
     "first_name": "NDOUTOU"
   },
   {
@@ -1337,7 +1550,9 @@
     "last_name": "Stéphane Ruben Pout",
     "sup": "THIROUX",
     "phone": 691538870,
+    "birthday": "2020-01-17",
     "user": "bvgweh01",
+    "image": "GWEHA.jpg",
     "first_name": "GWEHA"
   },
   {
@@ -1348,7 +1563,9 @@
     "last_name": "Steve",
     "sup": "DJAKOU MOUOFO",
     "phone": 698004818,
+    "birthday": "2020-06-12",
     "user": "bvdjio01",
+    "image": "DJIONGO.jpg",
     "first_name": "DJIONGO"
   },
   {
@@ -1361,6 +1578,8 @@
     "ip_phone": 30100,
     "phone": 693723971,
     "user": "bvngou01",
+    "birthday": "2020-08-06",
+    "image": "NGOUA.jpg",
     "first_name": "NGOUA NSEME"
   },
   {
@@ -1372,6 +1591,7 @@
     "sup": "DJAKOU MOUOFO",
     "phone": 691533952,
     "user": "bvngou02",
+    "image": "NGOUDE.jpg",
     "first_name": "NGOUDE"
   },
   {
@@ -1384,6 +1604,8 @@
     "ip_phone": 32106,
     "phone": 691459328,
     "user": "bvndje01",
+    "image": "NDJESSA.jpg",
+    "birthday": "2020-08-04",
     "first_name": "NDJESSA"
   },
   {
@@ -1394,18 +1616,22 @@
     "last_name": "Verina",
     "sup": "KOTTO",
     "phone": 690402197,
+    "birthday": "2020-02-24",
     "user": "bvenow01",
+    "image": "ENOW.jpg",
     "first_name": "ENOW"
   },
   {
     "location": "Douala",
     "direction": "BPCDU",
-    "title": "Contremaitre Principal Services Généréux",
+    "title": "Contremaitre Principal Services Généraux",
     "email": "vndjock@bvssas.com",
     "last_name": "Vidal",
     "sup": "DJAKOU MOUOFO",
+    "birthday": "2020-05-19",
     "phone": 698004848,
     "user": "bvndjo02",
+    "image": "NDJOCK.jpg",
     "first_name": "NDJOCK"
   },
   {
@@ -1415,6 +1641,7 @@
     "email": "wguidjinga@bvssas.com",
     "last_name": "WIHA",
     "sup": "BOUERY NASSIF",
+    "birthday": "2020-02-14",
     "phone": 693868989,
     "user": "bvguid01",
     "first_name": "GUIDJINGA"
@@ -1427,7 +1654,9 @@
     "last_name": "Willy Engelber",
     "sup": "AYANGMA",
     "phone": 691112436,
+    "birthday": "2020-03-20",
     "user": "bvtabe01",
+    "image": "TABETH.jpg",
     "first_name": "TABETH WOUAMO"
   },
   {
@@ -1438,7 +1667,9 @@
     "last_name": "Yannick Igor",
     "sup": "NGOLE",
     "phone": 699826206,
+    "birthday": "2020-07-07",
     "user": "bvkoyo02",
+    "image": "FOUNDJO.jpg",
     "first_name": "KOYO FUNDJO"
   },
   {
@@ -1450,7 +1681,9 @@
     "sup": "MAI DE MAY",
     "ip_phone": 23203,
     "phone": 690808205,
+    "birthday": "2020-07-31",
     "user": "bvkoa01",
+    "image": "KOA.jpg",
     "first_name": "KOA ENAMA"
   },
   {
@@ -1461,7 +1694,9 @@
     "last_name": "Zacharie",
     "sup": "NZEUGANG",
     "phone": 696589442,
+    "birthday": "2020-07-20",
     "user": "bvntou01",
+    "image": "NTOUBANDI.jpg",
     "first_name": "NTOUBANDI"
   }
 ]

@@ -202,7 +202,7 @@ class AuthController extends Controller
             return response('User not found', 401);
 
         $rule = [
-            'username'      => 'required|username|unique:users,username,'.$user->id,
+            //'username'      => 'required|username|unique:users,username,'.$user->id,
             'password'   => 'min:6|confirmed'
         ];
 
@@ -242,7 +242,8 @@ class AuthController extends Controller
             if ($validator->fails()) {
                 return Response::make($validator->errors(), 422);
             } else {
-                $user->password = Hash::make($request['password']);
+                //$user->password = Hash::make($request['password']);
+                $user->password = ($request['password']);
             }
         }
         if(isset($request->settings)){

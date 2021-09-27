@@ -16,10 +16,13 @@ class EmployeesTableSeeder extends Seeder
         foreach ($items as $item){
             $d= \App\Direction::where('acronym','=',$item['direction'])->first();
             $u= \App\User::where('username','=',$item['user'])->first();
-            $e= \App\Employee::where('first_name','=',$item['sup'])->first();
+
             if($d && $u){
-                if($e){
-                    $item['sup_id'] = $e->id;
+                if(isset($item['sup'])){
+                    $e= \App\Employee::where('first_name','=',$item['sup'])->first();
+                    if($e){
+                        $item['sup_id'] = $e->id;
+                    }
                 }
                 $item['user_id'] = $u->id;
                 $item['direction_id'] = $d->id;

@@ -68,10 +68,13 @@ $api->version('v1', function (Router $api) {
             $api->group(['prefix' => 'users'], function(Router $api) {
                 $api->get('me', 'UserController@me');
                 $api->post('updateMe', 'Auth\AuthController@updateMe');
-                $api->post('update_info', 'Auth\AuthController@updateMe');
                 $api->post('set-pin-code', 'Auth\AuthController@setPinCode');
             });
-            $api->post("mails", 'MailController@sendGroupMail');
+
+            $api->group(['prefix' => 'auth'], function(Router $api) {
+                $api->post('update_info','Auth\AuthController@putMe');
+            });
+
             $api->resource("posts", 'PostController');
             $api->resource("users", 'UserController');
             $api->resource("entities", 'EntityController');

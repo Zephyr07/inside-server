@@ -34,7 +34,7 @@ class SuggestionRequest extends FormRequest
             'title' => 'required|max:255',
             'description' => 'required|max:500',
             'status' => Rule::in(Suggestion::$Status),
-            'user_id'=>'required|integer|exists:users,id',
+            'employee_id'=>'required|integer|exists:employees,id',
 
         ];
 

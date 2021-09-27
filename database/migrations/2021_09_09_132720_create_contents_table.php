@@ -15,7 +15,7 @@ class CreateContentsTable extends Migration
     {
         Schema::create('contents', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('type')->unique();
+            $table->string('type');
             $table->string('title')->unique();
             $table->text('description');
             $table->string('image')->nullable();
