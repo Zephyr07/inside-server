@@ -1,10 +1,5 @@
 [
 	{
-		"username": "Hotline",
-		"password": "password",
-		"roles": ["employee.bvs"]
-	},
-	{
 		"username": "bvdipo01",
 		"password": "password",
 		"roles": ["employee.bvs"]
@@ -172,7 +167,7 @@
 	{
 		"username": "bvnand01",
 		"password": "password",
-		"roles": ["employee.bvs","super.administrator"]
+		"roles": ["super.administrator"]
 	},
 	{
 		"username": "bvbilo01",
@@ -291,11 +286,6 @@
 	},
 	{
 		"username": "bvmbia01",
-		"password": "password",
-		"roles": ["employee.bvs"]
-	},
-	{
-		"username": "bvngas01",
 		"password": "password",
 		"roles": ["employee.bvs"]
 	},

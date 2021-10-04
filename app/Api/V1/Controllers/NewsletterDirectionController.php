@@ -43,7 +43,7 @@ class NewsletterDirectionController extends Controller
      */
     public function store(NewsletterDirectionRequest $request)
     {
-        /*/ recuperation de la newsletter
+        // recuperation de la newsletter
         $newsletter= Newsletter::where("id","=",$request->newsletter_id)->first();
         // recuperation des employés de ce groupe
         $employees = Employee::where('direction_id',"=",$request->direction_id);
@@ -56,7 +56,7 @@ class NewsletterDirectionController extends Controller
                 Mail::to($e->email)
                     ->send(new NewsletterAdded($newsletter));
             }
-        }*/
+        }
         return RestHelper::store(NewsletterDirection::class,$request->all());
     }
     /**

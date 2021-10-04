@@ -38,7 +38,7 @@ class NewsletterGroupController extends Controller
      */
     public function store(NewsletterGroupRequest $request)
     {
-        /*/ recuperation de la newsletter
+        // recuperation de la newsletter
         $newsletter= Newsletter::where("id","=",$request->newsletter_id)->first();
         // recuperation des employés de ce groupe
         $employees = Member::with('employee')->where('group_id',"=",$request->group_id);
@@ -51,7 +51,7 @@ class NewsletterGroupController extends Controller
                 Mail::to($e->employee->email)
                     ->send(new NewsletterAdded($newsletter));
             }
-        }*/
+        }
         return RestHelper::store(NewsletterGroup::class,$request->all());
     }
     /**

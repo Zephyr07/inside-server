@@ -1,145 +1,223 @@
 [
   {
-    "display_name" : "Comrec User Permission",
-    "name" :  "comrec.permission",
+    "display_name" : "Consulter entité",
+    "name" :  "consult.entity",
     "description" : "give right to permissions"
   },
   {
-    "display_name" : "Administrer",
+    "display_name" : "Ajouter entité",
+    "name" :  "add.entity",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Modifier entité",
+    "name" :  "edit.entity",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Supprimer entité",
+    "name" :  "delete.entity",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Consulter partenaire",
+    "name" :  "consult.partner",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Ajouter partenaire",
+    "name" :  "add.partner",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Modifier partenaire",
+    "name" :  "edit.partner",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Supprimer partenaire",
+    "name" :  "delete.partner",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Consulter direction",
+    "name" :  "consult.direction",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Ajouter direction",
+    "name" :  "add.direction",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Modifier direction",
+    "name" :  "edit.direction",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Supprimer direction",
+    "name" :  "delete.direction",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Supprimer direction",
+    "name" :  "delete.direction",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Consulter employé",
+    "name" :  "consult.employee",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Ajouter employé",
+    "name" :  "add.employee",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Modifier employé",
+    "name" :  "edit.employee",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Supprimer employé",
+    "name" :  "delete.employee",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Consulter groupe",
+    "name" :  "consult.group",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Ajouter groupe",
+    "name" :  "add.group",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Modifier groupe",
+    "name" :  "edit.group",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Supprimer groupe",
+    "name" :  "delete.group",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Supprimer son groupe",
+    "name" :  "delete_onw.group",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Consulter note",
+    "name" :  "consult.newsletter",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Ajouter note",
+    "name" :  "add.newsletter",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Modifier note",
+    "name" :  "edit.newsletter",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Supprimer note",
+    "name" :  "delete.newsletter",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Consulter évènement",
+    "name" :  "consult.event",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Ajouter évènement",
+    "name" :  "add.event",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Modifier évènement",
+    "name" :  "edit.event",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Supprimer évènement",
+    "name" :  "delete.event",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Consulter auteur suggestion",
+    "name" :  "consult_author.suggestion",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Consulter suggestion",
+    "name" :  "consult.suggestion",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Modifier suggestion",
+    "name" :  "edit.suggestion",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Supprimer suggestion",
+    "name" :  "delete.suggestion",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Consulter role",
+    "name" :  "consult.role",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Ajouter role",
+    "name" :  "add.role",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Modifier role",
+    "name" :  "edit.role",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Supprimer role",
+    "name" :  "delete.role",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Consulter contenu",
+    "name" :  "consult.content",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Ajouter contenu",
+    "name" :  "add.content",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Modifier contenu",
+    "name" :  "edit.content",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Supprimer contenu",
+    "name" :  "delete.content",
+    "description" : "give right to permissions"
+  },
+  {
+    "display_name" : "Acces à l'admin",
     "name" :  "manage.admin",
-    "description" : "Administrer"
-  },
-  {
-    "display_name" : "Constuler encaissement",
-    "name" : "consult.receipt",
-    "description" : "Constuler encaissement"
-  },
-  {
-    "display_name" : "Consulter clients Admin",
-    "name" : "consult.customer",
-    "description" : "Consulter clients"
-  },
-  {
-    "display_name" : "Avancer facture",
-    "name" : "advance.bill",
-    "description" : "Avancer facture"
-  },
-  {
-    "display_name" : "Encaisser facture",
-    "name" : "cash.bill",
-    "description" : "Encaisser facture"
-  },
-  {
-    "display_name" : "Constulter facture",
-    "name" : "consult.bill",
-    "description" : "Constulter facture"
-  },
-
-  {
-    "display_name" : "Ajouter Utilisateur",
-    "name" : "add.user",
-    "description" : "Ajouter Utilisateur"
-  },
-  {
-    "display_name" : "Editer Utilisateur",
-    "name" : "edit.user",
-    "description" : "Editer Utilisateur"
-  },
-  {
-    "display_name" : "Supprimer Utilisateur",
-    "name" : "delete.user",
-    "description" : "Supprimer Utilisateur"
-  },
-  {
-    "display_name" : "Consulter Utilisateur",
-    "name" : "consult.user",
-    "description" : "Consulter utilisateur"
-  },
-  {
-    "display_name" : "Activer compte",
-    "name" : "active.account",
-    "description" : "Activer compte"
-  },
-
-  {
-    "display_name" : "Ajouter Role",
-    "name" : "add.role",
-    "description" : "Ajouter Role"
-  },
-  {
-    "display_name" : "Editer Role",
-    "name" : "edit.role",
-    "description" : "Editer Role"
-  },
-  {
-    "display_name" : "Supprimer Role",
-    "name" : "delete.role",
-    "description" : "Supprimer Role"
-  },
-  {
-    "display_name" : "Consult Role",
-    "name" : "consult.role",
-    "description" : "Consult Role"
-  },
-
-  {
-    "display_name" : "Ajouter Permission",
-    "name" : "add.permission",
-    "description" : "Ajouter Permission"
-  },
-  {
-    "display_name" : "Editer Permission",
-    "name" : "edit.permission",
-    "description" : "Editer Permission"
-  },
-  {
-    "display_name" : "Supprimer Permission",
-    "name" : "delete.permission",
-    "description" : "Supprimer Permission"
-  },
-  {
-    "display_name" : "Consulter Permission",
-    "name" : "consult.permission",
-    "description" : "Consulter Permission"
-  },
-  {
-    "display_name" : "Consulter dashboard",
-    "name" : "consult.dashboard",
-    "description" : "Consulter dashboard"
+    "description" : "give right to permissions"
   },
   {
     "display_name" : "Reinitialiser mot de passe",
-    "name" : "reset.password",
-    "description" : "Reinitialiser mot de passe"
-  },
-  {
-    "display_name" : "Consulter univers client",
-    "name" : "consult.customer-universe",
-    "description" : "Consulter univers client"
-  },
-  {
-    "display_name" : "Exporter données",
-    "name" : "export.data",
-    "description" : "Exporter données"
-  },
-  {
-    "display_name" : "Lier client",
-    "name" : "link.customer",
-    "description" : "Lier client"
-  },
-  {
-    "display_name" : "Consulter Tous les encaissements",
-    "name" : "consult.receipt-caisse",
-    "description" : "Consulter Tous les encaissements"
-  },
-  {
-    "display_name" : "Annuler Encaissement",
-    "name" : "edit.receipt",
-    "description" : "Consulter Tous les encaissements"
-  },
-  {
-    "display_name" : "Charger facture X3",
-    "name" : "load.bills",
-    "description" : "Charger manuellement les factures depuis X3"
+    "name" :  "reset.password",
+    "description" : "give right to permissions"
   }
+
 ]

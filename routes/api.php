@@ -66,12 +66,13 @@ $api->version('v1', function (Router $api) {
         $api->group(['middleware' => ['api','jwt.auth']], function (Router $api) {
 
             $api->group(['prefix' => 'users'], function(Router $api) {
-                $api->get('me', 'UserController@me');
+
                 $api->post('updateMe', 'Auth\AuthController@updateMe');
                 $api->post('set-pin-code', 'Auth\AuthController@setPinCode');
             });
 
             $api->group(['prefix' => 'auth'], function(Router $api) {
+                $api->get('me', 'UserController@me');
                 $api->post('update_info','Auth\AuthController@putMe');
             });
 

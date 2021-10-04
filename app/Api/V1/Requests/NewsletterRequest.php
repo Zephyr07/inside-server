@@ -24,7 +24,6 @@ class NewsletterRequest extends FormRequest
     public function rules(){
         $rules = [
             'title'=>'required|max:255',
-            'description'=>'max:255',
             'type'=>'required|max:255',
             'date'=>'date',
             'location'=>'max:255',

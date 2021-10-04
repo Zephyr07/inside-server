@@ -43,7 +43,7 @@ class NewsletterEntityController extends Controller
      */
     public function store(NewsletterEntityRequest $request)
     {
-        /*/ recuperation de la newsletter
+        // recuperation de la newsletter
         $newsletter= Newsletter::where("id","=",$request->newsletter_id)->first();
         // recuperation des employés de ce groupe
         $direction = Direction::with('employees')->where('entity_id',"=",$request->entity_id);
@@ -58,7 +58,7 @@ class NewsletterEntityController extends Controller
                         ->send(new NewsletterAdded($newsletter));
                 }
             }
-        }*/
+        }
         return RestHelper::store(NewsletterEntity::class,$request->all());
     }
     /**
