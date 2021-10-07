@@ -44,7 +44,7 @@ $api->version('v1', function (Router $api) {
 
 
     $api->group(['namespace' => 'App\Api\V1\Controllers'], function (Router $api) {
-        $api->group(['prefix' => 'auth'], function (Router $api) {
+        $api->group(['prefix' => 'auth','middleware'=>'cors'], function (Router $api) {
             $api->post('signup', 'Auth\AuthController@signup');
             $api->post('signin', 'Auth\AuthController@signin');
             $api->post('oauth', 'Auth\AuthController@oauth_login');
@@ -63,7 +63,7 @@ $api->version('v1', function (Router $api) {
             $api->post('refresh', 'RefreshController@refresh');
         });
 
-        $api->group(['middleware' => ['api','jwt.auth']], function (Router $api) {
+        $api->group(['middleware' => ['api','jwt.auth','cors']], function (Router $api) {
 
             $api->group(['prefix' => 'users'], function(Router $api) {
 
