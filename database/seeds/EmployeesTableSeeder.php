@@ -15,7 +15,7 @@ class EmployeesTableSeeder extends Seeder
         $items = json_decode(file_get_contents($path),true);
         foreach ($items as $item){
             $d= \App\Direction::where('acronym','=',$item['direction'])->first();
-            $u= \App\User::where('username','=',$item['user'])->first();
+            $u= \App\User::where('phone','=',$item['phone'])->first();
 
             if($d && $u){
                 if(isset($item['sup'])){

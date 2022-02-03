@@ -60,11 +60,6 @@
     "description" : "give right to permissions"
   },
   {
-    "display_name" : "Supprimer direction",
-    "name" :  "delete.direction",
-    "description" : "give right to permissions"
-  },
-  {
     "display_name" : "Consulter employé",
     "name" :  "consult.employee",
     "description" : "give right to permissions"

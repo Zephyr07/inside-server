@@ -63,12 +63,12 @@ class AuthController extends Controller
      */
     public function signin(Request $request){
 
-        $credentials = $request->only('username', 'password');
-        $email=isset($credentials["username"])?$credentials["username"]:null;
-        if($email==null)
-            return Response::json(['error' => 'missing username'], 403);
+        $credentials = $request->only('phone', 'password');
+        $phone=isset($credentials["phone"])?$credentials["phone"]:null;
+        if($phone==null)
+            return Response::json(['error' => 'missing phone'], 403);
 
-        $user= User::where("username","=",$email)->first();
+        $user= User::where("phone","=",$phone)->first();
 
 
 
@@ -113,8 +113,8 @@ class AuthController extends Controller
     {
 
         $rule = [
-            'username'      => 'required|unique:users,username',
-            'password'   => 'required|min:5|confirmed'
+            'phone'      => 'required|unique:users,phone',
+            'password'   => 'required|min:6|confirmed'
         ];
 
 
@@ -126,7 +126,7 @@ class AuthController extends Controller
         }else{
             $verificationCode = Str::random(40);
             $user = new User();
-            $user->username = $request->username;
+            $user->phone = $request->phone;
             /*$user->name = $request->name;
             $user->email = $request->email;
             $user->phone = $request->phone;
@@ -151,8 +151,8 @@ class AuthController extends Controller
         ];
         $user = Auth::user();
 
-        if( $request->username !=null ){
-            $rule['username'] = 'required|unique:users,username,'.$user->id;
+        if( $request->phone !=null ){
+            $rule['phone'] = 'required|unique:users,phone,'.$user->id;
         }
         $validator = Validator::make($request->all(), $rule);
 
@@ -202,7 +202,7 @@ class AuthController extends Controller
             return response('User not found', 401);
 
         $rule = [
-            //'username'      => 'required|username|unique:users,username,'.$user->id,
+            //'phone'      => 'required|phone|unique:users,phone,'.$user->id,
             'password'   => 'min:6|confirmed'
         ];
 
@@ -216,7 +216,7 @@ class AuthController extends Controller
             return Response::make($validator->errors(), 422);
         }
 
-        if($request->username) $user->username = trim($request->username);
+        if($request->phone) $user->phone = trim($request->phone);
 
 
 

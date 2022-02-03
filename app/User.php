@@ -21,7 +21,7 @@ class User extends Authenticatable implements JWTSubject
      * @var array
      */
     protected $fillable = [
-        'username', 'password','status','has_reset_password'
+        'phone', 'password','status','has_reset_password'
     ];
 
     public static $Status = ['enable', 'disable', 'pending'];
@@ -75,7 +75,7 @@ class User extends Authenticatable implements JWTSubject
 
     public function getLabel()
     {
-        return $this->username;
+        return $this->phone;
     }
 
     public function employee()
