@@ -13,6 +13,20 @@
     "first_name": "SARRA"
   },
   {
+    "location": "Maurice",
+    "direction": "BVS",
+    "title": "Directreur Marketing et Communication Groupe BVS",
+    "email": "vsarra@bvssas.com",
+    "last_name": "Virginie",
+    "ip_phone": 30000,
+    "phone": 696620581,
+    "birthday": "2020-11-27",
+    "image": "SARRA.jpg",
+    "user": "bvsarr02",
+    "sup": "SARRA",
+    "first_name": "SARRA"
+  },
+  {
     "location": "Douala",
     "direction": "BDCDG",
     "title": "Directeur Général Zone 1 (Cameroun - Tchad - RCA)",
@@ -1302,7 +1316,7 @@
     "email": "hdikous@bvssas.com",
     "last_name": "Pablo",
     "sup": "KAMGA CHATUE",
-    "phone": 692554210,
+    "phone": 692956055,
     "birthday": "2020-04-01",
     "user": "bvdiko01",
     "image": "DIKOUS.jpg",

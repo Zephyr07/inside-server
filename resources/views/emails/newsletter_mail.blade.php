@@ -36,6 +36,10 @@ color: #333333;
                 <a href="{{$newsletter->file}}">Consulter</a>
             </p>
 
+            <p>
+                Rendez-vous dans BVS Inside pour plus de détails
+            </p>
+
         </div>
         <div class="clearfix" style="clear: both;">
             <br>

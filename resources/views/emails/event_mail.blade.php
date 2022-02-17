@@ -34,7 +34,11 @@ color: #333333;
             <p>{{$newsletter->description}}</p>
 
             <p>
-                <img src="{{$newsletter->image}}" alt="">
+                <img src="{{$newsletter->file}}" alt="Image {{$newsletter->title}}">
+                {{$newsletter}}
+            </p>
+            <p>
+                Rendez-vous dans BVS Inside pour plus de détails
             </p>
 
         </div>

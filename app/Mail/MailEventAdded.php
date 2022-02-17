@@ -32,7 +32,7 @@ class MailEventAdded extends Mailable
      */
     public function build()
     {
-        return $this->subject("[BVS Inside] Nouvel évènement")
+        return $this->subject("Nouvel évènement")
             ->view('emails.event_mail')
             ;
     }

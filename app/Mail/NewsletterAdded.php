@@ -32,7 +32,7 @@ class NewsletterAdded extends Mailable
      */
     public function build()
     {
-        return $this->subject("[BVS Inside] Nouvelle note")
+        return $this->subject("Nouvelle note")
             ->view('emails.newsletter_mail')
             ;
     }
