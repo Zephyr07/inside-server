@@ -1,0 +1,12 @@
+[
+  {
+    "type": "ceo",
+    "title": "Mot du CEO",
+    "description": "Contenu à écrire."
+  },
+  {
+    "type": "history",
+    "title": "Histoire de BVS",
+    "description": "Contenu à écrire."
+  }
+]
