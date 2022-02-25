@@ -37,7 +37,7 @@ color: #333333;
             </p>
 
             <p>
-                Rendez-vous dans BVS Inside pour plus de détails
+                Rendez-vous dans <a href="https://inside.bvssas.com"><strong>BVS Inside</strong></a> pour plus de détails
             </p>
 
         </div>

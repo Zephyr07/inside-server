@@ -30,15 +30,14 @@ color: #333333;
             <p>
                 <strong>{{$newsletter->title}}</strong>
             </p>
-            <p>Date de l'évènement : {{$newsletter->date}}</p>
+            <p>Date de l'évènement : <strong>{{$newsletter->date}}</strong></p>
             <p>{{$newsletter->description}}</p>
 
             <p>
-                <img src="{{$newsletter->file}}" alt="Image {{$newsletter->title}}">
-                {{$newsletter}}
+                <img src="{{$newsletter->image}}" alt="Image {{$newsletter->title}}">
             </p>
             <p>
-                Rendez-vous dans BVS Inside pour plus de détails
+                Rendez-vous dans <a href="https://inside.bvssas.com"><strong>BVS Inside</strong></a> pour plus de détails
             </p>
 
         </div>
