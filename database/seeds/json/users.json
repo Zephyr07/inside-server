@@ -25,11 +25,6 @@
 		"roles": ["employee.bvs"]
 	},
 	{
-		"phone": "699813008",
-		"password": "password",
-		"roles": ["employee.bvs"]
-	},
-	{
 		"phone": "699812611",
 		"password": "password",
 		"roles": ["employee.bvs"]
@@ -81,11 +76,6 @@
 	},
 	{
 		"phone": "691804014",
-		"password": "password",
-		"roles": ["employee.bvs"]
-	},
-	{
-		"phone": "699905419",
 		"password": "password",
 		"roles": ["employee.bvs"]
 	},
@@ -285,27 +275,12 @@
 		"roles": ["employee.bvs"]
 	},
 	{
-		"phone": "656548996",
-		"password": "password",
-		"roles": ["employee.bvs"]
-	},
-	{
 		"phone": "691107055",
 		"password": "password",
 		"roles": ["employee.bvs"]
 	},
 	{
-		"phone": "691810894",
-		"password": "password",
-		"roles": ["employee.bvs"]
-	},
-	{
 		"phone": "699907662",
-		"password": "password",
-		"roles": ["employee.bvs"]
-	},
-	{
-		"phone": "696134472",
 		"password": "password",
 		"roles": ["employee.bvs"]
 	},
@@ -395,11 +370,6 @@
 		"roles": ["employee.bvs"]
 	},
 	{
-		"phone": "691138343",
-		"password": "password",
-		"roles": ["employee.bvs"]
-	},
-	{
 		"phone": "691134522",
 		"password": "password",
 		"roles": ["employee.bvs"]
@@ -451,21 +421,6 @@
 	},
 	{
 		"phone": "656478401",
-		"password": "password",
-		"roles": ["employee.bvs"]
-	},
-	{
-		"phone": "699736717",
-		"password": "password",
-		"roles": ["employee.bvs"]
-	},
-	{
-		"phone": "698004006",
-		"password": "password",
-		"roles": ["employee.bvs"]
-	},
-	{
-		"phone": "690050315",
 		"password": "password",
 		"roles": ["employee.bvs"]
 	},
@@ -551,11 +506,6 @@
 	},
 	{
 		"phone": "691533952",
-		"password": "password",
-		"roles": ["employee.bvs"]
-	},
-	{
-		"phone": "691459328",
 		"password": "password",
 		"roles": ["employee.bvs"]
 	},
