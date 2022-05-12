@@ -234,6 +234,19 @@
   {
     "location": "Douala",
     "direction": "BDCDG",
+    "title": "BVS",
+    "email": "bvs@bvssas.com",
+    "last_name": "Super",
+    "sup": "NANDA",
+    "ip_phone": 21400,
+    "phone": 696870700,
+    "birthday": "2020-09-17",
+    "user": "bvnand10",
+    "first_name": "ADM"
+  },
+  {
+    "location": "Douala",
+    "direction": "BDCDG",
     "title": "Administrateur Systèmes et Réseaux",
     "email": "wkembou@bvssas.com",
     "last_name": "Wilfried",
